@@ -1,0 +1,267 @@
+@media (max-width: 375px){
+    
+/*Définition de la police personnalisée*/
+@font-face {
+    font-family: 'shrikhand';    
+    src: url("Shrikhand/Shrikhand-Regular.otf");
+    font-family: 'roboto';
+    src: url("Roboto/RobotoCondensed-LightItalic.ttf");
+}
+/*body*/
+body{
+    font-family: "roboto";
+    margin: 0;
+}
+.logo{
+    margin-top: 8%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+.logo img {
+    font-family: 'Shrikhand';
+    width: 40%;
+    height: auto;
+}
+/*header*/
+
+header{
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 15%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15%;
+}
+
+form{
+    width: 100%;
+    border-top: 2px solid rgb(216, 214, 214);
+    border-bottom: 1px solid transparent;
+    background-color: #e1e3e7;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+}
+form i{
+    font-size: 1em;
+    margin-left: 20%;
+    margin-top: 0.5%;
+}
+input.search{
+    border: transparent;
+    background-color: #e1e3e7;
+    font-size: 1em;
+    color: black;
+    font-weight: bolder;
+    margin-left: 3%;
+}
+h1{
+    font-size: 1.8em;
+    text-align: center;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.reserver{
+    width: 350px;
+    overflow: hidden;
+    font-size: 1.3em;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+input.bouton{
+    width: 70%;
+    border: 1px solid rgb(180, 116, 175);
+    border-radius: 30px;
+    background-color: #FF79DA ;
+    box-shadow: inset 0 0 6em rgb(180, 116, 175);
+    padding: 5%;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/*Fonctionnement*/
+
+.fonction{
+    margin: 0;
+}
+h2{
+    margin-left: 5%;
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+ol{
+    list-style-type: none;
+    padding-left: 0;  
+}
+ol li{
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 10%;
+    padding: 8%;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    box-shadow: 0 2px 0px 0.1em #e2e2e2; 
+    font-size: 1.2em;
+    font-weight: bolder; 
+    counter-increment: list;  
+}
+
+li::before{
+    content:counter(list);
+    border: 2px solid rgb(180, 116, 175);
+    background:rgb(180, 116, 175) ;
+    color: #fff;
+    border-radius:50%;
+    padding: 0.2rem 0.5rem;
+    position: absolute;
+}
+
+li i{
+    color: gray;
+    margin-right: 10%;
+    font-size: 1em;
+}
+i.fas.fa-store{
+    color: rgb(180, 116, 175);
+}
+
+ /*Restaurants*/
+
+.blocrestos{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    background-color: #F2F2F2;
+}
+h3{
+    padding-top: 15%;
+    margin-left: 5%;
+    font-size: 1.8em;
+    font-weight: bolder;   
+}
+.bloc{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.resto{
+    width: 90%;
+    height: 250px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 0.2em #e2e2e2; 
+    margin-bottom: 3%; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 100%; 
+    height: 70%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+div.ensemble{
+    margin-right: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    font-size: 1.2em;
+    color: black;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.nom{
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+.nom1{
+    margin-top: 2%;
+    margin-bottom: auto;
+}
+i.far.fa-heart{
+    margin-top: 5%;
+    margin-right: 10%; 
+    font-size: 2em;
+    font-weight: 0.1em;
+}
+.nouveau{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(160, 228, 224);
+    width: 110px;
+    height: 40px;  
+    position: absolute;
+    z-index: 20; 
+    margin-top: 5%;
+    margin-left: 55%; 
+}
+.nouveau p{
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: rgb(38, 122, 76);
+    margin-top: 8%;
+    margin-bottom: auto;
+    text-align: center;
+}
+img.nouveau{
+    display: contents;
+    justify-content: flex-end;   
+} 
+/*Footer*/
+footer{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+h4{
+    color: white;
+    margin-top: 0;
+    margin-left: 5%;
+    padding-top: 5%;
+    font-size: 1.5em;
+}
+ul{
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
+ul li{
+    color: white;
+    list-style-type: none;
+    margin-bottom: 2%;
+    font-size: 1.2em;
+}
+ul i{
+    margin-right: 3%;
+    font-size: 1em;
+}
+.fa-utensils:before{
+    font-size: 0.8em;
+}
+.fa-hands-helping:before{
+    font-size: small;
+}
+}

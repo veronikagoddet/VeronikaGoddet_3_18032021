@@ -3,41 +3,36 @@
     <head>
         <meta charset = "utf-8"/>
         <meta name="viewport" content="width=device-width" /><!--Mobiles-->
-        <link rel="stylesheet" href="style/stylesheet.css"><!--Pour tout le monde-->
+        <link rel="stylesheet" type="text/css" href="style/stylesheet.css"/>
              <!-- My kit's code here -->
         <script src="https://kit.fontawesome.com/b973543f90.js" crossorigin="anonymous"></script> <!--Icones-->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200;1,400&display=swap" rel="stylesheet"> <!--Police-->
+        <link href="https://fontmeme.com/polices/police-shrikhand/" rel="stylesheet"/><!--Police-->
+        <link href="https://fontmeme.com/polices/police-roboto/" rel="stylesheet"/><!--Police-->
         <title>  
             Ohmyfood  
         </title>
     </head>
             
         <body>
-
-            <header>
-                <!--Logo-->
-                <p><img src="images/logo/ohmyfood.png" alt="logo_ohmyfood"></p>
-
-                 <!--Bouton "Retour accueil"-->
-                 <form action="#"><!--Formulaire de saisi-->
-                    <input type="submit" class="bouton" value="Vers l'accueil"/>
-                 </form>
+            <!--Logo-->
+            <p class="logo"><img src="images/logo/ohmyfood.png" alt="logo_ohmyfood"/></p>
             
+            <header>
+                
                 <!--Bouton recherche ville-->
                 <form action="#"><!--Formulaire de saisi-->
-                    <i class="fas fa-map-marker-alt"></i><input type="search" name="recherche" 
-                    class="search" placeholder="Paris, Belleville"/>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" name="recherche" class="search" placeholder="Paris, Belleville"/>
                 </form>
 
                 <!--Titre-->
                 <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <p class="reserver">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
                 <!--Bouton "Explorer nos restaurants"-->
-                <form action="#"><!--Formulaire de saisi-->
-                   <input type="submit" class="bouton" value="Explorer nos restaurants"/>
-                </form>
-
+                
+                <input type="submit" class="bouton" value="Explorer nos restaurants"/>
+                
             </header>
             <main>
                 <section class="fonction">
@@ -46,47 +41,74 @@
                         Fonctionnement
                     </h2>
                     <!--3 boutons-->
-                    <ol class="fonctionnement"> <!--List-style-image comme puce devant l'élément à puce-->
-                        <li><span class="choisir"><i class="fas fa-mobile-alt"></i></span>Choisissez un restaurant</li>
-                        <li><span class="composer"><i class="fas fa-list-ul"></i></span>Composez votre menu</li>
-                        <li><span class="déguster"><i class="fas fa-store"></i></span>Dégustez au restaurant</li>
+                    <ol> 
+                        <li><span><i class="fas fa-mobile-alt"></i></span>Choisissez un restaurant</li>
+                        <li><span><i class="fas fa-list-ul"></i></span>Composez votre menu</li>
+                        <li><span><i class="fas fa-store"></i></span>Dégustez au restaurant</li>
                     </ol>
                 </section>
 
-                <section class="restos">
+                <section class="blocrestos">
                     <!--Titre-->
                     <h3>
                         Restaurants <!--Nouveau!!!-->
                     </h3>
-                    <a class="palette" href="Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette"/>
-                            <p>Nouveau</p>
-                            <p>La palette du goût</p>
-                            <p>Ménilmontant</p>
-                            <i class="far fa-heart"></i>
-                    </a>
+                    <div class="bloc">
+                        <a class="resto" href="index1.html">
+                            <div class="nouveau">
+                                <p>Nouveau</p>
+                            </div>
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette"/>
+                            
+                            <div class="ensemble">
+                                <div class="text">   
+                                    <p class="nom">La palette du goût</p>
+                                    <p class="nom1">Ménilmontant</p>
+                                </div>
+                                <i class="far fa-heart"></i>      
+                            </div>   
+                        </a>   
+                        
+                        <a class="resto" href="Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                            <div class="nouveau">
+                                <p>Nouveau</p>
+                            </div>
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="note"/>
 
-                    <a class="note" href="Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="note"/>
-                            <p>Nouveau</p>
-                            <p>La note enchantée</p>
-                            <p>Charonne</p>
-                            <i class="far fa-heart"></i><i class="far fa-hand-pointer"></i><!--Icone de la main n'est pas la même!!!-->
-                    </a>
+                            <div class="ensemble">
+                                <div class="text">
+                                    <p class="nom">La note enchantée</p>
+                                    <p class="nom1">Charonne</p>
+                                </div>
+                                <i class="far fa-heart"></i>     
+                            </div>   
+                        </a>     
+                               
+                        <a class="resto" href="Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="francaise"/>
+                            
+                            <div class="ensemble">
+                                <div class="text">
+                                    <p class="nom">À la française</p>
+                                    <p class="nom1">Cité Rouge</p>
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </a>
 
-                    <a class="francaise" href="Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="francaise"/>
-                            <p>A la française</p>
-                            <p>Cité Rouge</p>
-                            <i class="far fa-heart"></i>
-                    </a>
-
-                    <a class="delice" href="Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="delice"/>
-                            <p>Le délice des sens</p>
-                            <p>Folie-Méricourt</p>
-                            <i class="far fa-heart"></i>
-                    </a>
+                        <a class="resto" href="Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="delice"/>
+                        
+                            <div class="ensemble">
+                                <div class="text">
+                                    <p class="nom">Le délice des sens</p>
+                                    <p class="nom1" >Folie-Méricourt</p>
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </a>
+                    </div>        
+                       
                 </section>
             </main>
 
@@ -96,7 +118,7 @@
                 </h4>
                 <ul>
                     <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-                    <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                    <li><i class="fas fa-hands-helping"></i></i>Devenir partenaire</li>
                     <li>Mentions légales</li>
                     <li>Contact</li>
                 </ul>
