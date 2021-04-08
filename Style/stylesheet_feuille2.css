@@ -1,44 +1,293 @@
-@media (max-width: 375px){
-
-    @font-face {
-        font-family: 'shrikhand';    
-        src: url("Shrikhand/Shrikhand-Regular.otf");
-        font-family: 'roboto';
-        src: url("Roboto/RobotoCondensed-LightItalic.ttf");
-    }
+@font-face {
+    font-family: 'Shrikhand';    
+    src: url("./Police/Shrikhand/Shrikhand-Regular.otf");
+    font-family: 'Roboto-Regular';
+    src: url("./Police/Roboto/Roboto-Regular.ttf");
+    font-family: 'Roboto-Light';
+    src: url("./Police/Roboto/Roboto-Light.ttf");  
+}
     /*body*/
 
     body{
-        font-family: "roboto";
+        font-family: 'Roboto-Regular';
         margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*header*/
+
+    header{
+        width: 100%;
+        padding-bottom: 0;
+        
     }
     .logo{
-        margin-top: 0%;
-        margin-bottom: 0%;
-        margin-left: 0%;
-        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 1%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+    .arrow{
+        display: flex;
+        text-decoration: none;
+        color: black;
+        padding-left: 5%;
+    }
+   
+    #imagelogo {
+        font-family: 'Shrikhand';
+        width: 20%;
+        height: auto;
+        background-color: white;
+        display: flex; 
+        padding-right: 40%;
+    }
+
+    /*Image du restaurant*/
+
+    .photo{
+        width: 100%;
+        height: auto;
+        margin-bottom: -5%;
+    }
+    .picture{
+        width: 100%;
+        border: 1px solid transparent;
+    }
+    img{
+        width: 100%;
+        height: 400px; 
+        object-fit: cover;
+    }
+
+    /*Main, Article et Sections*/
+
+    main{
+        width: 100%;
+        background-color: #F2F2F2;
+    }
+    article{
+        width: 94%;
+        height: auto;
+        background-color: #F2F2F2;
+        position: absolute;
+        z-index: 100;
+        border-radius: 50px 50px 0px 0px;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .titre{
+        width: 100%;
+        height: auto;
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h1{
+        font-family: 'Shrikhand'; 
+        font-size: 1.8rem;
+        margin-left: 0%; 
+        margin-bottom: 0;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .far.far{
+        line-height: 3;
+        font-size: 1.8rem;
+        color: gray;
+        margin-right: 3%;
+        padding-top: 3%;
         display: flex;
         flex-direction: row;
         align-items: center;
-    }
-    .logo p{
-        margin-top: 5%;
-        margin-bottom: 2%;
-    }
-    p img {
-        font-family: 'Shrikhand';
-        width: 40%;
+    }  
+    
+    /*Menus*/
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
         height: auto;
-        margin-bottom: 0%;
     }
-    div i.fas{
+    .mets{
+        width: 50%;
+    }
+    h2{
+        font-size: 1em;
+        font-weight: inherit;
+        margin-left: 0%;
+        color: gray;
+        margin-bottom: 1%;
+    }
+    #trait_dessous{
+        width: 40px;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        
+    }
+    hr{
+        height: 2px;
+        border-color: transparent;
+        background:#9bbee0; 
+        margin-top: 1%;
+    }
+    div.card{
+        border: 1px solid #e5e6e7;
+        border-color: #F2F2F2;
+        border-radius: 20px;
+        background: white;
+        box-shadow: 0px 5px 5px #e0e3e6;
+        width: 95%;
+        height: 70px;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .card p{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 3%;
+    
+    }
+    .first{
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: 3%;
+        margin-bottom: 0%;
+        margin-left: 4%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+        
+    }
+    .second{
+        font-family: 'Roboto-Light';
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .price{
+        color: black;
+        font-weight: bolder;
+        display: flex;
+        margin-right: 5%;
+    }
+
+    /*Bouton*/
+
+    input.bouton{
+        width: 40%;
+        border: 1px solid rgb(180, 116, 175);
+        border-radius: 30px;
+        background-color: #FF79DA ;
+        box-shadow: inset 0 0 6em rgb(180, 116, 175);
+        padding: 3%;
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+
+    /*Footer*/
+    footer{
+        width: 100%;
+        height: auto;
+        margin-top: 48%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+        background-color: black;
+        
+    }
+    .footerlogo{
+        margin-left: 3%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+    .elements{
+        display: flex;
+        flex-direction: row;
+    }
+    .element{
+        width: 100%;
+        color: white;
+        font-size: 1.2em;
         margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-decoration: none;
+    }
+    .element i{
+        margin-right: 3%;
+        font-size: 1em;
+    }
+    .fa-utensils:before{
+        font-size: 0.8em;
+    }
+    .fa-hands-helping:before{
+        font-size: small;
+    }
+
+@media (max-width: 375px){
+
+    /*body*/
+
+    body{
+        font-family: 'Roboto-Regular';
+        margin: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     /*header*/
 
     header{
         padding-bottom: 0;
+    }
+    .logo{
+        margin-top: 8%;
+        margin-bottom: 1%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+    .arrow{
+        display: flex;
+        text-decoration: none;
+        color: black;
+        padding-left: 5%;
+    }
+   
+    #imagelogo {
+        font-family: 'Shrikhand';
+        width: 40%;
+        height: auto;
+        background-color: white;
+        display: flex; 
+        padding-right: 30%;
+    }
+
+    /*Image du restaurant*/
+
+    .photo{
+        width: 100%;
+        height: 260px;
+        margin-bottom: -15%;
     }
     .picture{
         width: 100%;
@@ -50,11 +299,21 @@
         object-fit: cover;
     }
 
-    /*Main*/
+    /*Main, Article et Sections*/
 
     main{
         width: 100%;
         background-color: #F2F2F2;
+    }
+    article{
+        width: 100%;
+        background-color: #F2F2F2;
+        position: absolute;
+        z-index: 100;
+        border-radius: 50px 50px 0px 0px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 40px;
     }
     .titre{
         width: 100%;
@@ -63,32 +322,48 @@
         justify-content: space-between;
     }
     h1{
-        height: min-content;
+        font-family: 'Shrikhand';
+        font-size: 1.8rem;
         margin-left: 5%; 
         margin-bottom: 0;
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
     }
     .far.far{
         line-height: 3;
         font-size: 1.8rem;
         color: gray;
         margin-right: 10%;
+        padding-top: 3%;
+        display: flex;
+        align-items: center;
     }  
     
     /*Menus*/
-
-    section{
-        margin-top: 10%;
+    .menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 3%;
     }
 
-    h2{
+    .mets{
+        width: auto;
+        padding-left: 5%;
+        padding-bottom: 10%;
+    }
+    h2{ 
         font-size: 1em;
-        margin-left: 5%;
-        color: gray;
+        font-weight: inherit;
+        margin-top: 0;
         margin-bottom: 1%;
+        margin-left: 0%;
+        color: gray;
     }
     #trait_dessous{
         width: 45px;
-        margin-left: 5%;
+        margin-left: 0%;
         margin-bottom: 3%;
     }
     hr{
@@ -103,10 +378,10 @@
         border-radius: 20px;
         background: white;
         box-shadow: 0px 5px 5px #e0e3e6;
-        width: 90%;
+        width: 75%;
         height: 70px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 5%;
         display: flex;
         flex-direction: column;
@@ -119,21 +394,21 @@
     
     }
     .first{
+        font-size: 1.1em;
+        font-weight: bold;
         margin-top: 3%;
         margin-bottom: 0%;
         margin-left: 4%;
         padding-top: 4%;
         padding-bottom: 1%;
-        font-size: 1.2em;
-        font-weight: bolder;
+        
     }
     .second{
+        font-family: 'Roboto-Light';
+        font-size: 0.8rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    .second p{
-        color: gray;
     }
     .price{
         color: black;
@@ -154,48 +429,52 @@
         color: #fff;
         font-size: 1.1em;
         font-weight: bold;
-        margin-top: 10%;
+        margin-top: 5%;
         margin-bottom: 15%;
         margin-left: 20%;
         margin-right: 20%;
     }
 
-    /*Footer*/
+     /*Footer*/
 
     footer{
         width: 100%;
-        height: 100%;
-        margin: 0;
-        background-color: black;
-    }
-    h4{
-        color: white;
-        margin-top: 0;
-        margin-left: 5%;
+        height: auto;
         padding-top: 5%;
-        font-size: 1.5em;
-    }
-    ul{
         padding-bottom: 10%;
-        padding-left: 5%;
+        background-color: black;
+        margin-top: 333%;
+        margin-left: 0;
+        margin-right: 0;
+        
     }
-    ul li{
+    .footerlogo{
+        margin-left: 0%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .elements{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+    }
+    .element{
         color: white;
-        list-style-type: none;
-        margin-bottom: 2%;
         font-size: 1.2em;
+        margin-left: 5%;
+        margin-top: 0%;
+        margin-bottom: 2%;
+        text-decoration: none;
     }
-    ul i{
+    .element i{
         margin-right: 3%;
         font-size: 1em;
     }
     .fa-utensils:before{
         font-size: 0.8em;
-        margin-left: 0;
     }
     .fa-hands-helping:before{
-        font-size: small;
-        margin-left: 0;
+    font-size: small;
     }
    
 }
