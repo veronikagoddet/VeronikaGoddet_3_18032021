@@ -2,333 +2,15 @@
 @font-face {
     font-family: 'Shrikhand';    
     src: url("./Police/Shrikhand/Shrikhand-Regular.otf");
-    font-family: 'Roboto-Regular';
-    src: url("./Police/Roboto/Roboto-Regular.ttf");
+
     font-family: 'Roboto-Light';
     src: url("./Police/Roboto/Roboto-Light.ttf");
     
 }
 /*body*/
 body{
-    font-family: 'Roboto-Regular';
-}
-
-/*header*/
-
-header{
-    background-color: #F2F2F2;
-    width: 100%;
-    margin-top: 3%;
-    margin-bottom: 0%;
-    margin-left: 0;
-    margin-right: 0; 
-    padding-bottom: 3%;
-}
-.logo{
-    margin-top: 0%;
-    margin-bottom: 1%;
-    text-align: center;
-    background-color: white;
-   
-}
-#imagelogo {
-    font-family: 'Shrikhand';
-    width: 20%;
-    height: auto;
-    background-color: white;  
-}
-
-form{
-    width: 40%;
-    border: 2px solid rgb(216, 214, 214);
-    border-radius: 20px;
-    background-color: #e1e3e7;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    display: flex;
-    justify-content: center;
-    margin-left: 30%;
-}
-form i{
-    font-size: 1em;
-    margin-left: 20%;
-    margin-top: 0.5%;
-    display: flex;
-    align-items: center;
-}
-input.search{
-    border: transparent;
-    background-color: #e1e3e7;
-    font-size: 1em;
-    color: black;
-    font-weight: bolder;
-    margin-left: 3%;
-    display: flex;
-    align-items: center;
-}
-h1{
-    font-size: 1.8em;
-    text-align: center;
+    font-family: 'Roboto';
     width: auto;
-    margin-top: 3%;
-    margin-left:auto;
-    margin-right: auto;
-}
-.reserve{
-    width: 350px;
-    overflow: hidden;
-    font-size: 1.3em;
-    font-weight: lighter;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-input.bouton{
-    width: 40%;
-    border: 1px solid #9356DC;
-    border-radius: 30px;
-    background-color: #FF79DA ;
-    box-shadow: inset 0 0 6em #9356DC;
-    padding: 2%;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 1%;
-    margin-left: 30%;
-    margin-right: 15%;
-}
-
-/*Fonctionnement*/
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.fonction{
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-h2{ 
-    margin-left: 35%;
-    margin-bottom: 0;
-    font-size: 1.8em;
-    font-weight: bolder;
-    display: flex;
-    
-}
-.function{
-    width: auto;
-    margin-top: 10%;
-    margin-left: 0%;
-    display: flex;
-    flex-direction: column;   
-}
-.function1{
-    width: auto;
-    border: 1px solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    box-shadow: 0 2px 0px 0.1em #e2e2e2; 
-    padding: 5%;
-    font-size: 1.2em;
-    font-weight: bolder;  
-    margin-bottom: 5%;
-    display: flex;   
-    justify-content: center;
-}
-
-.number{
-    border: 1px solid #9356DC;;
-    background:#9356DC; ;
-    color: #fff;
-    border-radius: 50%;
-    padding: 0.2rem 0.5rem;
-    position: absolute;
-    font-size: 0.8rem;
-    line-height: 1; 
-    display: flex;
-    margin-left: -40%;
-}
-
-.function1 i{
-    color: gray;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 1em;
-}
-i.fas.fa-mobile-alt{
-    padding-right: 5%;
-}
-i.fas.fa-list-ul{
-    padding-right: 7%;
-}
-i.fas.fa-store{
-    color: #9356DC;
-    padding-right: 5%;
-}
-
- /*Restaurants*/
-
-.blocrestos{
-    width: 100%;
-    height: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 0%;
-    margin-bottom: 5%;
-    background-color: #F2F2F2;
-    border: 1px solid #e2e2e2;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-
-}
-h3{
-    padding-top: 3%;
-    margin-left: 7%;
-    font-size: 1.8em;
-    font-weight: bolder; 
-    display: flex;  
-}
-.bloc{
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 5%;
-    padding-bottom: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-}
-.resto{
-    width: 40%;
-    height: 250px;
-    border: 1px solid white;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 5px 0.3em #e2e2e2; 
-    margin-bottom: 3%; 
-    
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-img{
-    width: 100%; 
-    height: 70%;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-}
-div.ensemble{
-    margin-right: 0%;
-    display: flex;
-    justify-content: space-between;
-}
-.text{
-    font-size: 1.2em;
-    color: black;
-    padding-left: 5%;
-    padding-bottom: 5%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
-.nom{
-    margin-top: 10%;
-    margin-bottom: 0;
-    font-weight: bolder;
-}
-.nom1{
-    margin-top: 2%;
-    margin-bottom: auto;
-}
-i.far.fa-heart{
-    margin-top: 5%;
-    margin-right: 10%; 
-    font-size: 2em;
-    font-weight: 0.1em;
-}
-.nouveau{
-    border: 1px solid transparent;
-    border-radius: 3px;
-    background-color: rgb(160, 228, 224);
-    width: 110px;
-    height: 40px;  
-    position: absolute;
-    z-index: 20; 
-    margin-top: 1%;
-    margin-left: 25%; 
-}
-.nouveau p{
-    font-size: 1.2em;
-    font-weight: bolder;
-    color: rgb(38, 122, 76);
-    margin-top: 8%;
-    margin-bottom: auto;
-    text-align: center;
-}
-img.nouveau{
-    display: flex;
-    justify-content: flex-end;   
-} 
-/*Footer*/
-footer{
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding-bottom: 1%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-}
-.footerlogo{
-    margin-left: 3%;
-    padding-top: 3%;
-    padding-bottom: 1%;
-}
-.elements{
-    display: flex;
-    flex-direction: row;
-}
-.element{
-    width: 100%;
-    color: white;
-    font-size: 1.2em;
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-.element i{
-    margin-right: 3%;
-    font-size: 1em;
-}
-.fa-utensils:before{
-    font-size: 0.8em;
-}
-.fa-hands-helping:before{
-    font-size: small;
-}
-@media (max-width: 375px){
-    
-/*Définition de la police personnalisée*/
-@font-face {
-    font-family: 'Shrikhand';    
-    src: url("./Police/Shrikhand/Shrikhand-Regular.otf");
-    font-family: 'Roboto-Regular';
-    src: url("./Police/Roboto/Roboto-Regular.ttf");
-    font-family: 'Roboto-Light';
-    src: url("./Police/Roboto/Roboto-Light.ttf");
-    
-}
-/*body*/
-body{
-    font-family: 'Roboto-Regular';
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -336,9 +18,9 @@ body{
 
 /*header*/
 main{
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto';
     margin: 0;
-    width: 100%;
+    width: auto;
     height: auto;  
 }
 header{
@@ -352,16 +34,17 @@ header{
     
 }
 .logo{
-    margin-top: 8%;
+    margin-top: 0%;
     margin-bottom: 0;
     text-align: center;
     background-color: white;
 }
-#imagelogo {
+.imagelogo {
     font-family: 'Shrikhand';
     width: 40%;
     height: auto;
     background-color: white;
+    margin-top: 3%;
 }
 
 form{
@@ -412,10 +95,10 @@ h1{
 }
 input.bouton{
     width: 70%;
-    border: 1px solid #9356DC;
+    border: 1px solid #bf6ec2;
     border-radius: 30px;
-    background-color: #FF79DA ;
-    box-shadow: inset 0 0 6em #9356DC;
+    background-image: linear-gradient(#FF79DA , #9356DC);
+    filter: drop-shadow(4px 4px 6px #bbc4d4);
     padding: 5%;
     color: #fff;
     font-size: 1.1em;
@@ -429,45 +112,49 @@ input.bouton{
 
 .fonction{
     width: 100%; 
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
 }
 h2{
     margin-left: 3%;
+    margin-bottom: 0;
     font-size: 1.8em;
     font-weight: bolder;
     display: flex;
-    justify-content: start;
 }
 .function{
-    width: 75%;
-    margin-top: 15%;
-    margin-left: 5%;
+    width: 100%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;   
 }
 .function1{
-    width: 100%;
-    border: 1px solid #F2F2F2;
-    background-color: #F2F2F2;
+    width: 70%;
+    border: 1px solid #f2f2f3;
+    background-color: #f2f3f2F2;
     border-radius: 25px;
-    box-shadow: 0 2px 0px 0.1em #e2e2e2; 
+    box-shadow: 0 2px 0px 0.1em #e3e2e2; 
     padding: 8%;
     font-size: 1em;
-    font-weight: bolder;  
+    font-weight: bolder; 
+    margin-left: 7%; 
+    margin-right: 3%;
     margin-bottom: 5%;
     display: flex;
     align-items: center;   
 }
 
 .number{
-    border: 1px solid #9356DC;;
+    border: 1px solid #9357DC;;
     background:#9356DC; ;
     color: #fff;
     border-radius: 50%;
     padding: 0.2rem 0.5rem;
     position: absolute;
-    margin-left: -85%;
+    margin-left: -12%;
     display: flex;
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: flex;
     align-items: center; 
 }
@@ -476,7 +163,7 @@ h2{
     color: gray;
     margin-left: 0%;
     margin-right: 5%;
-    font-size: 1em;
+    font-size: 1.2em;
     display: flex;
     align-items: center;
 }
@@ -525,7 +212,7 @@ h3{
 .resto{
     width: 94%;
     height: 250px;
-    border: 1px solid white;
+    border: 1px solid #fff;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 5px 0.3em #e2e2e2; 
@@ -558,23 +245,24 @@ div.ensemble{
     flex-direction: column;
 }
 .nom{
-    margin-top: 10%;
+    margin-top: 8%;
     margin-bottom: 0;
     font-size: 1.2rem;
     font-weight: bolder;
 }
 .nom1{
     font-family: 'Roboto-Light';
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 2%;
     margin-bottom: auto;
 }
 i.far.fa-heart{
-   
+    color: rgb(101, 101, 104);
     margin-top: 5%;
     margin-right: 10%; 
     font-size: 2em;
-    font-weight:lighter;
+    font-weight: lighter;
+    cursor: pointer;
 }
 .nouveau{
     border: 1px solid transparent;
@@ -598,8 +286,10 @@ i.far.fa-heart{
 img.nouveau{
     display: contents;
     justify-content: flex-end;   
-} 
+}
+
 /*Footer*/
+
 footer{
     width: 100%;
     height: auto;
@@ -611,13 +301,17 @@ footer{
     flex-direction: column;
 }
 .footerlogo{
-    margin-left: -3%;
+    margin-left: 7%;
     padding-top: 10%;
     padding-bottom: 5%;
+}
+.picturelogo{
+    width: 40%;
 }
 .elements{
     display: flex;
     flex-direction: column;
+    margin-left: 3%;
 }
 .element{
     color: white;
@@ -637,4 +331,490 @@ footer{
 .fa-hands-helping:before{
     font-size: small;
 }
+@media (min-width: 376px) and (max-width: 768px){
+
+    /*body*/
+    body{
+    width: auto;
+    }
+
+    /*header*/
+    main{
+        width: auto;
+    }
+    header{
+        width: 100%;
+        margin-bottom: 3%;
+        padding-bottom: 5%;   
+    }
+    .imagelogo {
+        width: auto;
+        height: auto; 
+    }
+    form i{
+        margin-left: 7%;
+        margin-top: 0%;
+    }
+    input.search{ 
+        margin-left: 3%;
+    }
+    h1{
+        font-size: 1.6em;
+        width: auto;
+        margin-top: 4%;
+    } 
+    .reserve {
+        font-size: 1.2em;
+        margin-bottom: 0%;
+    }
+    input.bouton{
+        width: 60%;
+        border-radius: 20px;
+        padding: 3%;
+        margin-top: 3%;
+        margin-left: 20%;
+        margin-right: 25%;
+        font-size: 1em;
+    }
+    section{
+        width: auto;
+    }
+    h2{
+        font-size: 1.3em;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+    .function{ 
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .function1{
+        width: 83%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 3%;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    .number{
+        font-size: 0.6em;
+        padding: 0.2rem 0.3rem;
+        margin-left: -75%;
+    }
+    i.fas.fa-mobile-alt{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    i.fas.fa-list-ul{
+        padding-left: 3%;
+        padding-right: 4%;
+    }
+    i.fas.fa-store{
+        color: #9356DC;
+        padding-left: 3%;
+        padding-right: 4%;
+    }
+    .blocrestos{
+        margin-top: 5%;
+    }
+    h3{
+        font-size: 1.3em;
+        margin-left: 5%;
+        padding-top: 1%;
+    }
+    .nouveau{
+        margin-top: 1%;
+        margin-left: 3%;
+    }
+    i.far.fa-heart{
+        margin-top: 3%;
+    }
+    footer{
+        padding-bottom: 5%;
+    }
+    .footerlogo{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .picturelogo{
+        margin-left: 0%;
+    }
 }
+@media (min-width: 769px) and (max-width: 1024px){
+
+       /*body*/
+       body{
+        width: 100%;
+        }
+        /*header*/
+        main{
+            width: 100%;
+        }
+        header{
+            width: 100%;
+            margin-bottom: 3%;
+            padding-bottom: 5%;   
+        }
+        .imagelogo {
+            width: auto;
+            height: auto; 
+        }
+        form i{
+            margin-left: 8%;
+            margin-top: 0%;
+        }
+        input.search{ 
+            margin-left: 3%;
+        }
+        h1{
+            font-size: 1.6em;
+            width: auto;
+            margin-top: 4%;
+        } 
+        .reserve {
+            width: 100%;
+            font-size: 1.2em;
+            overflow: inherit;
+            margin-bottom: 0%;
+        }
+        input.bouton{
+            width: 60%;
+            border-radius: 20px;
+            padding: 3%;
+            margin-top: 3%;
+            margin-left: 20%;
+            margin-right: 25%;
+            font-size: 1em;
+        }
+        section{
+            width: 100%;
+        }
+        .fonction{ 
+            width: 100%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            display: flex;
+            flex-direction: row;   
+        }
+        h2{
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 3%;
+            margin-right: 0%;
+        }
+        .function{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;  
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        .function1{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            margin-top: 3%;
+            margin-bottom: 3%;
+            margin-left: 0%;
+            margin-right: 0%;
+            padding: 2%;
+            font-size: 1em;
+        }
+        .number{
+            font-size: 0.6em;
+            padding: 0.2rem 0.3rem;
+            margin-left: -23%;
+        }
+        i.fas.fa-mobile-alt{
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        i.fas.fa-list-ul{
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        i.fas.fa-store{
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        .blocrestos{
+            width: 100%;
+            height: auto;
+            margin-top: 3%;
+            margin-bottom: 0%;
+            display: flex;
+            flex-direction: column;
+        }
+        h3{
+            font-size: 1.1em;
+            margin-left: 3%;
+            padding-top: 1%;
+        }
+        .bloc{
+            width: 100%;
+            margin-left: 0%;
+            margin-right: 5%;
+            padding-bottom: 3%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;    
+        }
+        .resto{
+            width: 45%;
+            height: 250px;
+            margin-bottom: 3%;    
+        }  
+        .nouveau{
+            margin-top: 1%;
+            margin-left: 25%;
+        }
+        i.far.fa-heart{
+            margin-top: 3%;
+        }
+        footer{
+            padding-bottom: 1%;
+        }
+        .footerlogo{
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+        .picturelogo{
+            margin-left: -5%;
+        }
+}
+@media (min-width: 1025px) and (max-width: 1824px){
+
+    /*body*/
+    body{
+        width: auto;
+    }
+    
+    /*header*/
+
+    header{
+        width: 100%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0;
+        margin-right: 0; 
+        padding-bottom: 3%;
+    }
+    .logo{
+        margin-top: 0%;
+        margin-bottom: 0%;  
+    }
+    .imagelogo {
+        width: auto;
+        height: auto; 
+        margin-top: 0;
+        padding-top: 3%;
+    }
+    form{
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: center;
+    }
+    form i{
+        font-size: 1em;
+        margin-left: 5%;
+        margin-top: 0%;
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        font-size: 1.8em;
+        text-align: center;
+        width: auto;
+        margin-top: 3%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .reserve{   
+        font-size: 1.3em;
+        width: 100%;
+        overflow: inherit;
+        font-weight: lighter;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input.bouton{
+        width: 40%;
+        border-radius: 20px;
+        padding: 2%;
+        font-size: 1.2em;
+        margin-top: 1%;
+        margin-left: 30%;
+        margin-right: 15%;
+    }
+
+    /*Fonctionnement*/
+
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    section{
+        width: 100%;
+    }
+
+    .fonction{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    h2{ 
+        font-size: 1.3em;
+        font-weight: bolder;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 3%;
+    }
+    .function{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;  
+        margin-top: 4%;
+        margin-bottom: 0%;
+        margin-right: 3%;
+    }
+    .function1{
+        width: 30%;
+        padding: 1%;
+        margin-left: 0;
+        margin-right: 3%;
+        font-size: 0.8em;
+        font-weight: bolder;  
+        display: flex;   
+        justify-content: center;
+    }
+    .number{
+        padding: 0.2rem 0.3rem;
+        font-size: 0.6rem;
+        display: flex;
+        margin-left: -25%;
+    }
+    .function1 i{
+        font-size: 1em;
+    }
+    i.fas.fa-mobile-alt{
+        padding-right: 5%;
+    }
+    i.fas.fa-list-ul{
+        padding-right: 7%;
+    }
+    i.fas.fa-store{
+        color: #9356DC;
+        padding-right: 5%;
+    }
+
+    /*Restaurants*/
+
+    .blocrestos{
+        width: 94%;
+        height: auto;
+        padding-bottom: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 6%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    h3{
+        padding-top: 3%;
+        margin-left: 3%;
+        font-size: 1.3em;
+        font-weight: bolder; 
+        display: flex;  
+    }
+    .bloc{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;    
+    }
+    .resto{
+        width: 45%;
+        height: 250px;
+        margin-bottom: 3%;    
+    }
+    .nouveau{
+        margin-top: 1%;
+        margin-left: 30%; 
+    }
+    i.far.fa-heart{
+        margin-top: 3%;
+    }
+
+    /*Footer*/
+
+    footer{
+        width: 100%;
+        height: auto;
+        margin-top: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    .footerlogo{
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 3%;
+    }
+    .picturelogo{
+        background: #000;
+        width: 10%;
+    }
+    .elements{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+    }
+    .element{
+        width: 100%;
+        color: white;
+        font-size: 1em;
+        margin-left: 3%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .element i{
+        margin-right: 3%;
+        font-size: 1em;
+    }
+    .fa-utensils:before{
+        font-size: 0.8em;
+    }
+    .fa-hands-helping:before{
+        font-size: small;
+    } 
+}  
+  
