@@ -108,6 +108,10 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+.btn:hover{
+    background: linear-gradient(#f5bce5 , #b28fdd);
+    box-shadow: 0px 5px 12px 3px #657cf0;
+}
 
 /*Fonctionnement*/
 
@@ -259,10 +263,20 @@ div.ensemble{
 }
 i.far.fa-heart{
     color: rgb(101, 101, 104);
+    font-weight: bold;
     margin-top: 5%;
     margin-right: 10%; 
     font-size: 2em;
     font-weight: lighter;
+    cursor: pointer;
+}
+.far.far::before {
+    content: "#xf004";
+    font-weight: bold;
+    transition: color 3s ease-in-out;
+}
+.far.far:hover::before{
+    color: red;
     cursor: pointer;
 }
 .nouveau{
@@ -316,7 +330,7 @@ footer{
 }
 .element{
     color: white;
-    font-size: 1em;
+    font-size: 1.1em;
     margin-left: 5%;
     margin-top: 0%;
     margin-bottom: 2%;
@@ -350,7 +364,7 @@ footer{
     }
     .imagelogo {
         width: auto;
-        height: auto; 
+        height: auto;
     }
     form i{
         margin-left: 7%;
@@ -394,9 +408,10 @@ footer{
         margin-left: 5%;
         margin-right: 5%;
         padding: 3%;
-        font-size: 0.8em;
+        font-size: 1em;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .number{
         font-size: 0.6em;
@@ -514,7 +529,7 @@ footer{
             align-items: center;
             justify-content: space-evenly;  
             margin-top: 0%;
-            margin-bottom: 0%;
+            margin-bottom: 0%;  
         }
         .function1{
             width: 25%;
@@ -526,7 +541,7 @@ footer{
             margin-left: 0%;
             margin-right: 0%;
             padding: 2%;
-            font-size: 0.8em;
+            font-size: 1.1em;
         }
         .number{
             font-size: 0.6em;
@@ -590,24 +605,26 @@ footer{
         .picturelogo{
             margin-left: -5%;
         }
+        .element{
+            margin-bottom: 1%;
+        }
 }
-@media (min-width: 1025px) and (max-width: 1824px){
+@media (min-width: 1025px){
 
     /*body*/
     body{
         width: auto;
+        margin: 0;
     }
     
     /*header*/
 
     header{
         width: 100%;
-        margin-top: 0%;
-        margin-bottom: 0%;
-        margin-left: 0;
-        margin-right: 0; 
+        margin: 0; 
         padding-bottom: 3%;
     }
+   
     .logo{
         margin-top: 0%;
         margin-bottom: 0%;  
@@ -671,6 +688,7 @@ footer{
     }
     section{
         width: 100%;
+        margin: 0;
     }
 
     .fonction{

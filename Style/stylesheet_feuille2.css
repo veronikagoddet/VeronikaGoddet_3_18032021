@@ -13,12 +13,15 @@
         margin: 0;
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     /*header*/
 
     header{
+        margin: 0;
         padding-bottom: 0;
+        width: 100%;
     }
     .logo{
         margin-top: 0%;
@@ -43,7 +46,7 @@
         height: auto;
         background-color: white;
         display: flex; 
-        padding-right: 30%;
+        margin-right: 30%;
         margin-top: 3%;
     }
 
@@ -64,21 +67,22 @@
         object-fit: cover;
     }
 
-    /*Main, Article et Sections*/
+    /*Main, Article*/
 
     main{
-        width: auto;
+        width: 100%;
         background-color: #F2F2F2;
+        position: relative;
+        z-index: 1;
+        border-radius: 40px 40px 0px 0px;
+        padding-top: 40px;
+        margin: 0;
     }
     article{
         width: 100%;
         background-color: #F2F2F2;
-        position: relative;
-        z-index: 100;
-        border-radius: 50px 50px 0px 0px;
         padding-left: 0;
         padding-right: 0;
-        padding-bottom: 40px;
     }
     .titre{
         border-radius: 50px 50px 0px 0px;
@@ -89,22 +93,31 @@
     }
     h1{
         font-family: 'Shrikhand';
-        font-size: 1.8rem;
-        margin-left: 5%; 
-        margin-bottom: 0;
-        padding-top: 5%;
+        font-size: 1.6rem;
         display: flex;
         justify-content: center;
+        margin-left: 3%;
+        margin-top: 0;
+        margin-bottom: 5%;
     }
     .far.far{
-        line-height: 3;
-        font-size: 1.8rem;
-        color: gray;
-        margin-right: 8%;
-        padding-top: 3%;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-right: 10%;
+        margin-bottom: 10%;
+        color: rgb(101, 101, 104);
         display: flex;
-        align-items: center;
-    }  
+        align-items: center; 
+    } 
+    .fa.far::before {
+        content: "&#xf004";
+        font-weight: bold;
+        transition: color 3s ease-in-out;
+    }
+    .far.far:hover::before{
+        color: red;
+        cursor: pointer;
+    }
     
     /*Menus*/
     .menu{
@@ -115,7 +128,7 @@
     }
 
     .mets{
-        width: auto;
+        width: 97%;
         padding-left: 0%;
         padding-bottom: 10%;
     }
@@ -144,7 +157,7 @@
         border-radius: 20px;
         background: white;
         box-shadow: 0px 5px 5px #e0e3e6;
-        width: 96%;
+        width: 94%;
         height: 70px;
         margin-left: 3%;
         margin-right: 3%;
@@ -157,6 +170,10 @@
         margin-top: 0;
         margin-bottom: 0%;
         margin-left: 3%;
+        margin-right: 3%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .first{
         font-size: 1.1em;
@@ -165,8 +182,6 @@
         margin-bottom: 0%;
         padding-top: 4%;
         padding-bottom: 1%;
-        text-overflow: ellipsis;
-        width: 320px;
     }
     .second{
         font-family: 'Roboto-Light';
@@ -174,33 +189,37 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        text-overflow: ellipsis;
-        width: 320px;
-    }
+    }    
     .price{
         color: black;
         font-weight: bolder;
         display: flex;
         justify-content: space-between;
-        margin-right: -5%;
+        font-weight: bolder;
+        margin-right: 5%;
     }
 
     /*Bouton*/
 
-    input.bouton{
-        width: 60%;
-        border: 1px solid rgb(180, 116, 175);
+    .btn{
+        width: 50%;
+        background: linear-gradient(#FF79DA , #9356DC);
+        box-shadow: 4px 4px 6px #c7cff5;
         border-radius: 30px;
-        background-color: #FF79DA ;
-        box-shadow: inset 0 0 6em rgb(180, 116, 175);
         padding: 5%;
         color: #fff;
         font-size: 1.1em;
         font-weight: bold;
-        margin-top: 5%;
+        text-align: center;
+        margin-top: 0%;
         margin-bottom: 15%;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background: linear-gradient(#f5bce5 , #b28fdd);
+        box-shadow: 0px 5px 12px 3px #657cf0;
     }
 
     /*Footer*/
@@ -232,7 +251,7 @@
     }
     .element{
         color: white;
-        font-size: 1.2em;
+        font-size: 1.1em;
         margin-left: 5%;
         margin-top: 0%;
         margin-bottom: 2%;
@@ -243,67 +262,72 @@
         font-size: 1em;
     }
     .fa-utensils:before{
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
     .fa-hands-helping:before{
         font-size: small;
     }
     @media (min-width: 376px) and (max-width: 768px){
 
-        body{
-            width: 100%;
-        }
-        .photo{
-            width: 100%;
-            height: 270px;
-            margin-bottom: 0%;
-        }
-        .picture{
-            width: 100%;
-            border: 0px solid transparent;
-        }
         header{
             width: 100%;
         }
         .logo{
             margin: 0;
         }
+        .arrow{
+            padding-bottom: 2%;
+        }
         .imagelogo {
             width: auto;
             height: auto; 
-            padding-right: 35%;
+            padding-right: 0%;
         }
-        .arrow{
-            margin-top: 5%;
+        .photo{
+            width: 100%;
+            height: 260px;
+            margin-bottom: -10%;
         }
         article{
             width: 100%;
-            position: relative;
+        }
+        .titre{
+            width: auto;
+            height: 40px;
+        }
+        .far.far{
+            margin-top: 2%;
         }
         .mets{
             padding-bottom: 3%;
         }
         .card{
+            width: 97%;
             margin-bottom: 3%;  
         }
         .first{
             padding-top: 2%;
         }
-        input.bouton{
+        .btn{
+            padding: 2%;
+            font-size: 1em;
             margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 20%;
-            margin-right: 20%;
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;   
         }
         footer{
-            width: 100%;
-            margin-top: 2%;
-            padding-bottom: 5%;
+            padding-bottom: 1%;
         }
         .footerlogo{
-            margin-left: 3%;
-            padding-top: 5%;
+            padding-top: 3%;
             padding-bottom: 3%;
+        }
+        .picturelogo{
+            margin-left: -5%;
+        }
+        .element{
+            margin-bottom: 1%;
         }
     }
     @media (min-width: 769px) and (max-width: 1024px){
@@ -313,12 +337,11 @@
         }
         .photo{
             width: 100%;
-            height: 270px;
-            margin-bottom: 0%;
+            height: 250px;
+            margin-bottom: -5%;
         }
         .picture{
             width: 100%;
-            border: 0px solid transparent;
         }
         header{
             width: 100%;
@@ -326,17 +349,42 @@
         .logo{
             margin: 0;
         }
+        .arrow{
+            padding-bottom: 1%;
+        }
         .imagelogo {
             width: auto;
             height: auto; 
-            padding-right: 35%;
+            margin-right: 40%;
+            padding-bottom: 1%;
+            padding-right: 0;
         }
-        .arrow{
-            margin-top: 3%;
+    
+        main{
+            width: 100%;
+            background-color: #F2F2F2;
+            position:relative;
+            z-index: 0;
+            border-radius: 0px 0px 0px 0px;
+            padding-top: 0px;
+            margin: 0%;
         }
         article{
             width: 100%;
-            position: relative;
+        }
+        .titre{
+            width: 100%;
+            height: 40px;
+            margin-top: 5%;
+        }
+        h1{
+            margin-bottom: 0;
+        }
+        .far.far{
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            margin-right: 3%;
+            padding-top: 0%;
         }
         .mets{
             padding-bottom: 3%;
@@ -347,27 +395,30 @@
         .first{
             padding-top: 1%;
         }
-        input.bouton{
-            width: 40%;
-            padding: 3%;
+        .btn{
+            width: 25%;
+            padding: 2%;
             font-size: 1.1em;
             margin-top: 0%;
-            margin-bottom: 0%;
-            margin-left: 30%;
-            margin-right: 30%;   
+            margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;   
         }
         footer{
-            width: 100%;
-            margin-top: 2%;
-            padding-bottom: 5%;
+            padding-bottom: 1%;
         }
         .footerlogo{
-            margin-left: 1%;
-            padding-top: 5%;
+            padding-top: 3%;
             padding-bottom: 3%;
         }
+        .picturelogo{
+            margin-left: -5%;
+        }
+        .element{
+            margin-bottom: 1%;
+        }
     }
-    @media (min-width: 1025px) and (max-width: 1824px){
+    @media (min-width: 1025px){
     /*body*/
 
     body{
@@ -383,9 +434,20 @@
         width: 100%;
         padding-bottom: 0;
     }
+    main{
+        width: 100%;
+        background-color: #F2F2F2;
+        position:relative;
+        z-index: 0;
+        border-radius: 0px 0px 0px 0px;
+        padding-top: 0px;
+        margin: 0%;
+    }
+    .titre{
+        margin-top: 3%;
+    }
     article{
         width: 100%;
-        position: fixed;
     }
     .logo{
         margin: 0;
@@ -398,13 +460,15 @@
         text-decoration: none;
         color: black;
         padding-top: 1%;
-        padding-left: 5%;
+        padding-left: 3%;
     }
     .imagelogo {
         width: auto;
         height: auto; 
         padding-top: 0%;
-        padding-right: 40%;
+        padding-bottom: 1%;
+        padding-right: 0%;
+        margin-right: 40%;
         margin-left: 0;
     }
 
@@ -417,52 +481,44 @@
     }
     .picture{
         width: 100%;
-        border: 1px solid transparent;
+        height: auto;
     }
     img{
         width: 100%;
-        height: 400px; 
-        object-fit: cover;
     }
 
-    /*Main, Article et Sections*/
+    /*Main, Article */
 
     main{
         width: 100%;
-        background-color: #F2F2F2;
+        margin-top: 3%;   
     }
     article{
-        width: 94%;
+        width: 100%;
         height: auto;
-        position: relative;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-bottom: 40px;
+        padding-left: 0%;
+        padding-right: 0%;
         display: flex;
         flex-direction: column;   
     }
     .titre{
         width: 100%;
-        height: auto;
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-between;
+        height: 40px;
     }
     h1{
         font-size: 1.8rem;
-        margin-left: 0%; 
+        margin-left: 3%; 
         margin-bottom: 0;
-        padding-top: 3%;
+        padding-top: 0%;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
     .far.far{
-        line-height: 3;
         font-size: 1.8rem;
-        color: gray;
+        margin-bottom: 0;
         margin-right: 3%;
-        padding-top: 3%;
+        padding-top: 2%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -475,16 +531,20 @@
         flex-direction: row;
         width: 100%;
         height: auto;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     .mets{
-        width: 50%;
-        padding-bottom: 5%;
+        width: 32%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0%;
     }
     h2{
         font-size: 1em;
         font-weight: inherit;
         margin-left: 0%;
-        color: gray;
         margin-bottom: 1%;
     }
     .trait_dessous{
@@ -501,7 +561,7 @@
     div.card{
         border-radius: 20px;
         box-shadow: 0px 5px 5px #e0e3e6;
-        width: 95%;
+        width: 94%;
         height: 70px;
         margin-left: 0%;
         margin-right: 0%;
@@ -513,36 +573,34 @@
         margin-top: 0%;
         margin-bottom: 0%;
         margin-left: 3%;
+        margin-right: 0;
     }
     .first{
-        font-size: 1.1em;
+        font-size: 1rem;
         font-weight: bold;
         margin-top: 3%;
         margin-bottom: 0%;
-        margin-left: 4%;
-        padding-top: 3%;
+        margin-left: 0%;
+        padding-top: 5%;
         padding-bottom: 1%;    
     }
     .second{
-        font-family: 'Roboto-Light';
         font-size: 0.8rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     .price{
-        color: black;
-        font-weight: bolder;
         display: flex;
         margin-right: 5%;
     }
 
     /*Bouton*/
 
-    input.bouton{
-        width: 40%;
+    .btn{
+        width: 25%;
         border-radius: 30px;
-        padding: 3%;
+        padding: 2%;
         font-size: 1.1em;
         font-weight: bold;
         margin-top: 3%;
