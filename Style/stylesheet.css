@@ -1,3 +1,81 @@
+.container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #99E2D0, #66e7c7) repeat;
+    animation: container 1000ms 2000ms ease-in-out both;
+    z-index: 2;
+    opacity: 1;
+  
+  }
+  @keyframes container{
+      0% {
+        transform: translate(0);
+        z-index:(2);
+        opacity:1;
+      }
+      25%{
+        transform: translate(70%)cubic-bezier(0,.51,.65,1);
+        opacity:0.8;
+      }
+      65%{
+        transform: translate(80%)cubic-bezier(0,.51,.65,1);
+        opacity:0.5;
+      }
+      85%{
+        transform: translate(90%)cubic-bezier(0,.51,.65,1);
+        opacity: 0.3;
+      }
+      100% {
+          transform: translate(-100%)cubic-bezier(0,.51,.65,1);
+          z-index:(-2);
+          opacity:0;
+      }
+  }
+  
+  .wave1 {
+    position: absolute;
+    background: #FF79DA no-repeat; 
+    bottom: 50px;
+    width: 100%;
+    height: 250px;
+    animation: wave1 2000ms ease-in-out both;
+    transform: scaleX(1); 
+  }
+  
+  .wave2 {
+    position: absolute ;
+    background: #9356DC no-repeat; 
+    bottom: 150px;
+    width: 100%;
+    height: 250px;
+    transform-origin: left;
+    animation: wave2 2000ms ease-in-out both;
+    animation-fill-mode: forwards;
+    transform: scaleX(1);
+  }
+  
+  @keyframes wave1 {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 110%;
+    }
+  }
+  @keyframes wave2 {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: 110%;
+    }
+  }
 /*Définition de la police personnalisée*/
 @font-face {
     font-family: 'Shrikhand';    
@@ -107,6 +185,7 @@ h1{
     margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 .btn:hover{
     background: linear-gradient(#f5bce5 , #b28fdd);
@@ -149,7 +228,6 @@ h2{
     display: flex;
     align-items: center;   
 }
-
 .number{
     border: 1px solid #9357DC;;
     background:#9356DC; ;
@@ -163,7 +241,6 @@ h2{
     display: flex;
     align-items: center; 
 }
-
 .function1 i{
     color: gray;
     margin-left: 0%;
@@ -261,23 +338,60 @@ div.ensemble{
     margin-top: 2%;
     margin-bottom: auto;
 }
-i.far.fa-heart{
-    color: rgb(101, 101, 104);
-    font-weight: bold;
-    margin-top: 5%;
-    margin-right: 10%; 
-    font-size: 2em;
-    font-weight: lighter;
-    cursor: pointer;
+.btn-heart:hover .gradient {
+    color: transparent;
+    z-index: -1;
 }
-.far.far::before {
-    content: "#xf004";
-    font-weight: bold;
-    transition: color 3s ease-in-out;
+.btn-heart:hover .nograd {
+    z-index: 1;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: height 0.9s linear;
+    -moz-transition: height 0.9s linear;
+    transition: height 0.9s linear;
+    height: 100%;
 }
-.far.far:hover::before{
-    color: red;
-    cursor: pointer;
+.btn-heart:active .gradient {
+    color: transparent;
+    z-index: -1;
+}
+.btn-heart:active .nograd {
+    z-index: 1;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: height 0.9s linear;
+    -moz-transition: height 0.9s linear;
+    transition: height 0.9s linear;
+    height: 100%;
+}
+.btn-heart .gradient {
+    background-color: transparent;
+    color:gray;
+}
+.btn-heart .nograd {
+    z-index: -1;
+    width: 100%;
+    height: 0;
+}
+.btn-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    padding-right: 5%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    position: relative;
+    border: transparent;
+}
+.btn-heart .gradient, .btn-heart .nograd {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nouveau{
     border: 1px solid transparent;
@@ -286,9 +400,8 @@ i.far.fa-heart{
     width: 75px;
     height: 27px;  
     position: absolute;
-    z-index: 20; 
-    margin-top: 3%;
-    margin-left: 65%; 
+    z-index: 1; 
+  
 }
 .nouveau p{
     font-size: 0.8em;
