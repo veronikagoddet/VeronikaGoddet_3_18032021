@@ -62,7 +62,7 @@
         border: 1px solid transparent;
     }
     img{
-        width: 100%;
+        width: 99%;
         height: 250px; 
         object-fit: cover;
     }
@@ -107,7 +107,7 @@
         z-index: -1;
     }
     .btn-heart:hover .nograd {
-        content: "";
+        content: "f004";
         z-index: 1;
         background: -webkit-linear-gradient(#9356DC, #FF79DA);
         -webkit-background-clip: text;
@@ -172,19 +172,15 @@
         width: 100%;
         margin-top: 3%;
     }
-
-    .mets{
-        width: 100%;
-        padding-left: 0%;
-        padding-bottom: 10%;
-        animation: mets 500ms 500ms both;
-    }
     .mets, .mets1, .mets2{
         width: 100%;
         height: auto;
         margin-left: 0;
         margin-right: 0;
-        padding-bottom: 0%; 
+        padding-bottom: 5%; 
+    }
+    .mets{
+        animation: mets 500ms 500ms both;
     }
     .mets1{
         animation: mets1 700ms 700ms both;
@@ -279,7 +275,7 @@
         font-family: 'Roboto-Light';
         font-size: 1em;
         font-weight: inherit;
-        margin-top: 3%;
+        margin-top: 2%;
         margin-bottom: 1%;
         margin-left: 3%;
     }
@@ -311,29 +307,19 @@
         cursor: pointer;
     }
     .card p{
-        margin-top: 0%;
-        margin-bottom: 0%;
-        margin-left: 0%;
-        padding-bottom: 0%;
+        margin: 0;
     }
     .tiles{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
         height: 100%;
     
     }
-    .first{
-        font-size: 1.1em;
-        font-weight: bold;
-        margin: 0;
-        padding-top: 0%;
-        padding-bottom: 0%;
-        padding-left: 3%;
-              
-    }
     .repas{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -341,43 +327,48 @@
         text-overflow: ellipsis;
         padding-top: 0%;
         padding-bottom: 0%;
+        margin-top: 3%;
+        margin-left: 3%;
         margin-bottom: 0;
+    }
+    .first{
+        font-size: 1em;
+        font-weight: bold; 
+    }
+    .desc{
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center; 
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-top: 1%;
+        padding-bottom: 0%;
+        margin-bottom: 0;
         
     }
     .second{
+        height: 70%;
         font-family: 'Roboto-Light';
         font-size: 1rem;
-        padding-left: 3%;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         position: relative;
-
     }
-    .checkbox{
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        right: 0;
-    }
-       
     .price{
-        width: 0%;
+        width: 15%;
         color: black;
         font-weight: bolder;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        margin-right: 5%;
-    }  
+        margin-right: 0%;
+    }
     
     .check{
-        height: 100%;
+        height: 102%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -395,28 +386,16 @@
         padding: 3%;
         margin: auto;
     }
-    
     .tiles:hover .check .fas {
         transition: transform 0.3s linear;
         transform: rotate(360deg);
     }
-    .tiles:hover .checkbox{
-        -webkit-transition: width 0.3s linear;
-        -moz-transition: width 0.3s linear;
-        transition: width 0.3s linear;
-        width: 45%;
-    }
-    .tiles:not(:hover).checkbox{
-        -webkit-transition: width 0.3s linear;
-        -moz-transition: width 0.3s linear;
-        transition: width 0.3s linear;
-        width: 0%;
-    }
+   
     .tiles:hover .check{
         -webkit-transition: width 0.3s linear;
         -moz-transition: width 0.3s linear;
         transition: width 0.3s linear;
-        width: 45%;
+        width: 25%;
         cursor: pointer;
     }
     .tiles:not(:hover) .check{
@@ -425,7 +404,24 @@
         transition: width 0.3s linear;
         width: 0%;
     }  
- 
+    .tiles:active.check .fas {
+        transition: transform 0.3s linear;
+        transform: rotate(360deg);
+    }
+   
+    .tiles:active .check{
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        transition: width 0.3s linear;
+        width: 25%;
+        cursor: pointer;
+    }
+    .tiles:not(:active) .check{
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        transition: width 0.3s linear;
+        width: 0%;
+    } 
 
     /*Bouton*/
 
@@ -439,7 +435,7 @@
         font-size: 1.1em;
         font-weight: bold;
         text-align: center;
-        margin-top: 15%;
+        margin-top: 5%;
         margin-bottom: 25%;
         margin-left: auto;
         margin-right: auto;
@@ -530,11 +526,17 @@
             padding-bottom: 3%;
         }
         .card{
-            width: 97%;
+            width: 94%;
             margin-bottom: 3%;  
         }
         .first{
             padding-top: 0%;
+        }
+        .tiles:hover .check{
+            width: 12%;
+        }
+        .tiles:active .check{
+            width: 12%;
         }
         .btn1{
             padding: 2%;
@@ -563,7 +565,7 @@
     @media (min-width: 769px) and (max-width: 1024px){
 
         body{
-            width: 100%;
+            width: auto;
         }
         .photo{
             width: 100%;
@@ -619,14 +621,18 @@
         .card{
             margin-bottom: 3%;  
         }
+        .repas{
+            margin-top: 1%;
+            padding-top: 0%;
+        }
         .first{
             padding-top: 0%;
         }
-        .tiles:hover .checkbox{
-            width: 45%;
-        }
         .tiles:hover .check{
-            width: 45%;
+            width: 10%;
+        }
+        .tiles:active .check{
+            width: 10%;
         }
         .btn1{
             width: 25%;
@@ -666,7 +672,7 @@
     /*header*/
 
     header{
-        width: 100%;
+        width: auto;
         padding-bottom: 0;
     }
     main{
@@ -703,7 +709,7 @@
         padding-top: 0%;
         padding-bottom: 1%;
         padding-right: 0%;
-        margin-right: 40%;
+        margin-right: 45%;
         margin-left: 0;
     }
 
@@ -729,7 +735,7 @@
         margin-top: 3%;   
     }
     article{
-        width: 100%;
+        width: auto;
         height: auto;
         padding-left: 0%;
         padding-right: 0%;
@@ -751,6 +757,7 @@
     }
     .btn-heart {
         padding-top: 2%;
+        padding-right: 5%;
     }  
 
     /*Menus*/
@@ -758,12 +765,16 @@
     .menu{
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width:auto;
         height: auto;
         margin-left: 3%;
         margin-right: 3%;
     }
-
+    .mets, .mets1, .mets2{
+        width: 35%;
+        padding-bottom: 1%; 
+    }
+   
     h2{
         font-size: 1em;
         font-weight: inherit;
@@ -792,13 +803,6 @@
         display: flex;
         flex-direction: column;    
     }
-
-    .card p{
-        margin-top: 0%;
-        margin-bottom: 0%;
-        margin-left: 3%;
-        margin-right: 0;
-    }
     .first{
         font-size: 1rem;
         font-weight: bold;
@@ -806,7 +810,10 @@
         margin-bottom: 0%;
         margin-left: 0%;
         padding-top: 0%;
-        padding-bottom: 1%;    
+        padding-bottom: 0%;    
+    }
+    .desc{
+       font-size: 1rem; 
     }
     .second{
         font-size: 0.8rem;
@@ -821,11 +828,11 @@
         display: flex;
         margin-right: 5%;
     }
-    .tiles:hover .checkbox{
-        width: 40%;
-    }
     .tiles:hover .check{
-        width: 40%;
+        width: 22%;
+    }
+    .tiles:active .check{
+        width: 22%;
     }
 
     /*Bouton*/
