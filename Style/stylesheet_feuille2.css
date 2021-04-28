@@ -101,10 +101,13 @@
         margin-bottom: 5%;
     }
     .btn-heart:hover .gradient {
-        color: transparent;
+        content: 'f004';
+        font-weight: bold;
+        transition: color 1s ease-out;
         z-index: -1;
     }
     .btn-heart:hover .nograd {
+        content: "";
         z-index: 1;
         background: -webkit-linear-gradient(#9356DC, #FF79DA);
         -webkit-background-clip: text;
@@ -115,7 +118,7 @@
         height: 100%;
     }
     .btn-heart:active .gradient {
-        color: transparent;
+        color: black;
         z-index: -1;
     }
     .btn-heart:active .nograd {
@@ -130,7 +133,7 @@
     }
     .btn-heart .gradient {
         background-color: transparent;
-        color:gray;
+        color: black;
     }
     .btn-heart .nograd {
         z-index: -1;
@@ -142,13 +145,16 @@
         justify-content: center;
         align-items: center;
         padding-top: 0%;
-        padding-bottom: 6%;
-        padding-right: 5%;
+        padding-bottom: 5%;
+        padding-right: 10%;
         width: 50px;
         height: 50px;
         font-size: 1.5em;
         position: relative;
-        border: transparent;
+        border: white;
+        background-color: #F2F2F2;
+        color: #fff;
+        
     }
     .btn-heart .gradient, .btn-heart .nograd {
         position: absolute;
@@ -156,6 +162,7 @@
         align-items: center;
         justify-content: center;
     }
+    
     
     /*Menus*/
 
@@ -167,13 +174,13 @@
     }
 
     .mets{
-        width: 97%;
+        width: 100%;
         padding-left: 0%;
         padding-bottom: 10%;
         animation: mets 500ms 500ms both;
     }
     .mets, .mets1, .mets2{
-        width: 32%;
+        width: 100%;
         height: auto;
         margin-left: 0;
         margin-right: 0;
@@ -266,13 +273,13 @@
         transform: scaleX(1);
         animation-timing-function: linear;
         opacity: 1;
-}
+    }
 }
     h2{ 
         font-family: 'Roboto-Light';
         font-size: 1em;
         font-weight: inherit;
-        margin-top: 0;
+        margin-top: 3%;
         margin-bottom: 1%;
         margin-left: 3%;
     }
@@ -290,7 +297,7 @@
     .card{
         border: 1px solid #e5e6e7;
         border-color: #F2F2F2;
-        border-radius: 20px;
+        border-radius: 15px;
         background: white;
         box-shadow: 0px 5px 5px #e0e3e6;
         width: 94%;
@@ -298,112 +305,131 @@
         margin-left: 3%;
         margin-right: 3%;
         margin-bottom: 5%;
+        position: relative;
         display: flex;
         flex-direction: column;
         cursor: pointer;
     }
-    .card span{
-        margin-top: 0;
+    .card p{
+        margin-top: 0%;
         margin-bottom: 0%;
-        margin-left: 3%;
-        margin-right: 3%;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        margin-left: 0%;
+        padding-bottom: 0%;
+    }
+    .tiles{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    
     }
     .first{
         font-size: 1.1em;
         font-weight: bold;
-        margin-top: 3%;
-        margin-bottom: 0%;
-        padding-top: 2%;
-        padding-bottom: 1%;
+        margin: 0;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        padding-left: 3%;
+              
+    }
+    .repas{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        margin-bottom: 0;
+        justify-content: space-between;
+        align-items: center; 
+        
     }
     .second{
         font-family: 'Roboto-Light';
         font-size: 1rem;
+        padding-left: 3%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        position: relative;
+
+    }
+    .checkbox{
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }    
+        align-items: center;
+        position: absolute;
+        right: 0;
+    }
+       
     .price{
+        width: 0%;
         color: black;
         font-weight: bolder;
         display: flex;
-        justify-content: space-between;
-        font-weight: bolder;
+        flex-direction: row;
+        align-items: center;
         margin-right: 5%;
-    }
-    .button{
+    }  
+    
+    .check{
+        height: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
-        width: 94%;
-        height: 70px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        position: absolute;
-        background: rgba(71, 178, 197, 0.247));
-        margin: 20px auto;
-        z-index: -1;
-    }
-    .progress-bar{
-        display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
-        width: 20%;
-        height: 70px;
-        position: relative;
-        background-color: #8ee2fc;
-        border: 1px solid transparent;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-radius: 0px 15px 15px 0px;
+        color:#fff;
+        background-color:  rgb(160, 228, 224);;
+        overflow: hidden;
     }
-    .fa-check:before{
+    .fas.fa-check{
         color: #8ee2ff;
         border: 1px solid white;
         background-color: white;
         border-radius: 50%;
-        width: 3%;
-        padding: 10%;
+        width: 25%;
+        padding: 3%;
         margin: auto;
     }
-    @keyframes progress-bar{
-        100% {
-        width: 0%;
-        left: 0%;
+    
+    .tiles:hover .check .fas {
+        transition: transform 0.3s linear;
+        transform: rotate(360deg);
     }
-    0% {
-        width: 15%;
-        left: 15%;
+    .tiles:hover .checkbox{
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        transition: width 0.3s linear;
+        width: 45%;
     }
-    }@-webkit-keyframes progress-bar{
-        0%{
-        width: 0%;
-    }
-    100% {
-        width: 15%}
-    }
-    @-moz-keyframes progress-bar {
-        0%{
+    .tiles:not(:hover).checkbox{
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        transition: width 0.3s linear;
         width: 0%;
     }
-    100% {
-        width: 15%}
+    .tiles:hover .check{
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        transition: width 0.3s linear;
+        width: 45%;
+        cursor: pointer;
     }
-    @-o-keyframes progress-bar {
-        0% {
+    .tiles:not(:hover) .check{
+        -webkit-transition: width 0.3s linear;
+        -moz-transition: width 0.3s linear;
+        transition: width 0.3s linear;
         width: 0%;
-    }
-    100% {
-        width: 15%}
-    } 
-}
+    }  
+ 
+
     /*Bouton*/
 
-    .btn{
+    .btn1{
         width: 50%;
         background: linear-gradient(#FF79DA , #9356DC);
         box-shadow: 4px 4px 6px #c7cff5;
@@ -413,13 +439,13 @@
         font-size: 1.1em;
         font-weight: bold;
         text-align: center;
-        margin-top: 0%;
-        margin-bottom: 15%;
+        margin-top: 15%;
+        margin-bottom: 25%;
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
     }
-    .btn:hover{
+    .btn1:hover{
         background: linear-gradient(#f5bce5 , #b28fdd);
         box-shadow: 0px 5px 12px 3px #657cf0;
     }
@@ -500,7 +526,7 @@
         .btn-heart {
             padding-top: 1%;
         }
-        .mets{
+        .mets  .mets1 .mets2{
             padding-bottom: 3%;
         }
         .card{
@@ -508,15 +534,17 @@
             margin-bottom: 3%;  
         }
         .first{
-            padding-top: 2%;
+            padding-top: 0%;
         }
-        .btn{
+        .btn1{
             padding: 2%;
             font-size: 1em;
-            margin-top: 0%;
-            margin-bottom: 5%;
+            margin-top: 5%;
+            margin-bottom: 10%;
             margin-left: auto;
-            margin-right: auto;   
+            margin-right: auto; 
+            text-align: center;
+            z-index: 1
         }
         footer{
             padding-bottom: 1%;
@@ -592,16 +620,24 @@
             margin-bottom: 3%;  
         }
         .first{
-            padding-top: 1%;
+            padding-top: 0%;
         }
-        .btn{
+        .tiles:hover .checkbox{
+            width: 45%;
+        }
+        .tiles:hover .check{
+            width: 45%;
+        }
+        .btn1{
             width: 25%;
             padding: 2%;
             font-size: 1.1em;
             margin-top: 0%;
             margin-bottom: 5%;
             margin-left: auto;
-            margin-right: auto;   
+            margin-right: auto;  
+            text-align: center;
+            z-index: 1
         }
         footer{
             padding-bottom: 1%;
@@ -769,7 +805,7 @@
         margin-top: 3%;
         margin-bottom: 0%;
         margin-left: 0%;
-        padding-top: 5%;
+        padding-top: 0%;
         padding-bottom: 1%;    
     }
     .second{
@@ -785,10 +821,16 @@
         display: flex;
         margin-right: 5%;
     }
+    .tiles:hover .checkbox{
+        width: 40%;
+    }
+    .tiles:hover .check{
+        width: 40%;
+    }
 
     /*Bouton*/
 
-    .btn{
+    .btn1{
         width: 25%;
         border-radius: 30px;
         padding: 2%;
@@ -797,7 +839,9 @@
         margin-top: 3%;
         margin-bottom: 3%;
         margin-left: auto;
-        margin-right: auto;   
+        margin-right: auto; 
+        text-align: center;
+        z-index: 1
     }
 
     /*Footer*/

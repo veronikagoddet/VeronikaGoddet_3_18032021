@@ -1,15 +1,15 @@
 .container {
     margin: 0;
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     bottom:0;
     left:0;
     display: flex;
     justify-content: space-between;
     background: linear-gradient(120deg, #99E2D0, #66e7c7) repeat;
     animation: container 1000ms 2000ms ease-in-out both;
-    z-index: 2;
+    z-index: 222;
     opacity: 1;
   
   }
@@ -35,6 +35,7 @@
           transform: translate(-100%)cubic-bezier(0,.51,.65,1);
           z-index:(-2);
           opacity:0;
+          visibility: hidden;
       }
   }
   
@@ -58,6 +59,16 @@
     animation: wave2 2000ms ease-in-out both;
     animation-fill-mode: forwards;
     transform: scaleX(1);
+  }
+
+  .loading{
+      width: 96%;
+      height: 60%;
+      padding-top: 5%;
+      padding-bottom: 2%;
+      padding-left: 2%;
+      padding-right: 2%;
+      margin: auto;
   }
   
   @keyframes wave1 {
@@ -162,7 +173,7 @@ h1{
     margin-right: auto;
 }
 .reserve{
-    width: 375px;
+    width: 100%;
     overflow: hidden;
     font-size: 1.1em;
     font-family: 'Roboto-Light';
@@ -171,7 +182,7 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
-.btn{
+.bouton{
     width: 50%;
     border: 1px solid transparent;
     border-radius: 30px;
@@ -187,7 +198,7 @@ h1{
     margin-right: auto;
     
 }
-.btn:hover{
+.bouton:hover{
     background: linear-gradient(#f5bce5 , #b28fdd);
     box-shadow: 0px 5px 12px 3px #657cf0;
 }
@@ -339,10 +350,13 @@ div.ensemble{
     margin-bottom: auto;
 }
 .btn-heart:hover .gradient {
-    color: transparent;
+    content: 'f004';
+    font-weight: bold;
+    transition: color 1s ease-out;
     z-index: -1;
 }
 .btn-heart:hover .nograd {
+    content: "f004";
     z-index: 1;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
@@ -353,7 +367,7 @@ div.ensemble{
     height: 100%;
 }
 .btn-heart:active .gradient {
-    color: transparent;
+    color: black;
     z-index: -1;
 }
 .btn-heart:active .nograd {
@@ -368,7 +382,7 @@ div.ensemble{
 }
 .btn-heart .gradient {
     background-color: transparent;
-    color:gray;
+    color:black;
 }
 .btn-heart .nograd {
     z-index: -1;
@@ -385,7 +399,10 @@ div.ensemble{
     height: 50px;
     font-size: 1.5em;
     position: relative;
-    border: transparent;
+    border: white;
+    background-color: #FFF;
+    color: #fff;
+    
 }
 .btn-heart .gradient, .btn-heart .nograd {
     position: absolute;
@@ -393,15 +410,17 @@ div.ensemble{
     align-items: center;
     justify-content: center;
 }
+
 .nouveau{
     border: 1px solid transparent;
     border-radius: 3px;
     background-color: rgb(160, 228, 224);
     width: 75px;
     height: 27px;  
+    margin-left: 65%;
+    margin-top: 3%;
     position: absolute;
-    z-index: 1; 
-  
+    z-index: 1;   
 }
 .nouveau p{
     font-size: 0.8em;
@@ -495,7 +514,7 @@ footer{
         font-size: 1.2em;
         margin-bottom: 0%;
     }
-    .btn{
+    .bouton{
         width: 60%;
         border-radius: 20px;
         padding: 3%;
@@ -607,7 +626,7 @@ footer{
             overflow: inherit;
             margin-bottom: 0%;
         }
-        .btn{
+        .bouton{
             width: 40%;
             border-radius: 20px;
             padding: 3%;
@@ -729,7 +748,7 @@ footer{
         width: auto;
         margin: 0;
     }
-    
+
     /*header*/
 
     header{
@@ -779,7 +798,7 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
-    .btn{
+    .bouton{
         width: 40%;
         border-radius: 20px;
         padding: 2%;
@@ -796,8 +815,8 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     section{
         width: 100%;
@@ -805,10 +824,11 @@ footer{
     }
 
     .fonction{
-        width: 100%;
+        width: 97%;
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-left: 3%;
     }
     h2{ 
         font-size: 1.3em;
@@ -828,7 +848,7 @@ footer{
         justify-content: space-evenly;  
         margin-top: 4%;
         margin-bottom: 0%;
-        margin-right: 3%;
+        margin-right: 0%;
     }
     .function1{
         width: 30%;
@@ -845,6 +865,7 @@ footer{
         font-size: 0.6rem;
         display: flex;
         margin-left: -25%;
+        margin-right: 0;
     }
     .function1 i{
         font-size: 1em;
@@ -868,8 +889,8 @@ footer{
         padding-bottom: 0%;
         margin-top: 0%;
         margin-bottom: 0%;
-        margin-left: 0%;
-        margin-right: 6%;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
