@@ -24,6 +24,7 @@
         width: 100%;
     }
     .logo{
+        width: 80%;
         margin-top: 0%;
         margin-bottom: 1%;
         margin-left: 0;
@@ -31,22 +32,23 @@
         background-color: white;
         display: flex;
         justify-content: space-between;
+        
     }
     .arrow{
+        width: 10%;
         display: flex;
         text-decoration: none;
         color: black;
         padding-left: 5%;
         margin-top: 3%;
     }
-   
     .imagelogo {
         font-family: 'Shrikhand';
-        width: 40%;
+        width: auto;
         height: auto;
         background-color: white;
         display: flex; 
-        margin-right: 30%;
+        margin-right: 0%;
         margin-top: 3%;
     }
 
@@ -62,7 +64,7 @@
         border: 1px solid transparent;
     }
     img{
-        width: 99%;
+        width: 127vh;
         height: 250px; 
         object-fit: cover;
     }
@@ -70,16 +72,15 @@
     /*Main, Article*/
 
     main{
-        width: 100%;
+        width: auto;
         background-color: #F2F2F2;
         position: relative;
         z-index: 1;
         border-radius: 40px 40px 0px 0px;
         padding-top: 40px;
-        margin: 0;
     }
     article{
-        width: 100%;
+        width: auto;
         background-color: #F2F2F2;
         padding-left: 0;
         padding-right: 0;
@@ -101,13 +102,13 @@
         margin-bottom: 5%;
     }
     .btn-heart:hover .gradient {
-        content: 'f004';
+        content: "f004";
         font-weight: bold;
         transition: color 1s ease-out;
         z-index: -1;
     }
     .btn-heart:hover .nograd {
-        content: "f004";
+        content: "";
         z-index: 1;
         background: -webkit-linear-gradient(#9356DC, #FF79DA);
         -webkit-background-clip: text;
@@ -118,7 +119,7 @@
         height: 100%;
     }
     .btn-heart:active .gradient {
-        color: black;
+        color: rgba(0, 0, 0, 0.74);
         z-index: -1;
     }
     .btn-heart:active .nograd {
@@ -133,7 +134,7 @@
     }
     .btn-heart .gradient {
         background-color: transparent;
-        color: black;
+        color: rgba(0, 0, 0, 0.75);
     }
     .btn-heart .nograd {
         z-index: -1;
@@ -153,8 +154,7 @@
         position: relative;
         border: white;
         background-color: #F2F2F2;
-        color: #fff;
-        
+        color: #fff;  
     }
     .btn-heart .gradient, .btn-heart .nograd {
         position: absolute;
@@ -162,7 +162,6 @@
         align-items: center;
         justify-content: center;
     }
-    
     
     /*Menus*/
 
@@ -333,7 +332,8 @@
     }
     .first{
         font-size: 1em;
-        font-weight: bold; 
+        font-weight: bold;
+        margin: 0; 
     }
     .desc{
         display: flex;
@@ -345,9 +345,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-top: 1%;
-        padding-bottom: 0%;
-        margin-bottom: 0;
-        
+        margin: 0; 
     }
     .second{
         height: 70%;
@@ -365,8 +363,7 @@
         display: flex;
         flex-direction: row;
         margin-right: 0%;
-    }
-    
+    }   
     .check{
         height: 102%;
         display: flex;
@@ -461,17 +458,18 @@
         flex-direction: column;
     }
     .footerlogo{
-        margin-left: 7%;
+        width: 40%;
+        margin-left: 5%;
         padding-top: 10%;
         padding-bottom: 5%;
     }
     .picturelogo{
-        width: 40%;
+        width: 100%;
     }
     .elements{
         display: flex;
         flex-direction: column;
-        margin-left: 3%;
+        margin-left: 0%;
     }
     .element{
         color: white;
@@ -497,18 +495,15 @@
             width: 100%;
         }
         .logo{
-            margin: 0;
+            width: 60%;
         }
         .arrow{
             padding-bottom: 2%;
         }
         .imagelogo {
-            width: auto;
-            height: auto; 
             padding-right: 0%;
         }
         .photo{
-            width: 100%;
             height: 260px;
             margin-bottom: -10%;
         }
@@ -552,14 +547,15 @@
             padding-bottom: 1%;
         }
         .footerlogo{
-            padding-top: 3%;
+            width: 30%;
+            padding-top: 5%;
             padding-bottom: 3%;
         }
         .picturelogo{
-            margin-left: -5%;
+            margin-left: 0%;
         }
         .element{
-            margin-bottom: 1%;
+            margin-bottom: 3%;
         }
     }
     @media (min-width: 769px) and (max-width: 1024px){
@@ -579,17 +575,10 @@
             width: 100%;
         }
         .logo{
-            margin: 0;
+            width: 60%;
         }
         .arrow{
             padding-bottom: 1%;
-        }
-        .imagelogo {
-            width: auto;
-            height: auto; 
-            margin-right: 40%;
-            padding-bottom: 1%;
-            padding-right: 0;
         }
     
         main{
@@ -649,11 +638,9 @@
             padding-bottom: 1%;
         }
         .footerlogo{
+            width: 20%;
             padding-top: 3%;
             padding-bottom: 3%;
-        }
-        .picturelogo{
-            margin-left: -5%;
         }
         .element{
             margin-bottom: 1%;
@@ -675,23 +662,12 @@
         width: auto;
         padding-bottom: 0;
     }
-    main{
-        width: 100%;
-        background-color: #F2F2F2;
-        position:relative;
-        z-index: 0;
-        border-radius: 0px 0px 0px 0px;
-        padding-top: 0px;
-        margin: 0%;
-    }
     .titre{
         margin-top: 3%;
     }
-    article{
-        width: 100%;
-    }
+   
     .logo{
-        margin: 0;
+        width: 60%;
         background-color: white;
         display: flex;
         justify-content: space-between;
@@ -701,16 +677,6 @@
         text-decoration: none;
         color: black;
         padding-top: 1%;
-        padding-left: 3%;
-    }
-    .imagelogo {
-        width: auto;
-        height: auto; 
-        padding-top: 0%;
-        padding-bottom: 1%;
-        padding-right: 0%;
-        margin-right: 45%;
-        margin-left: 0;
     }
 
     /*Image du restaurant*/
@@ -728,19 +694,24 @@
         width: 100%;
     }
 
-    /*Main, Article */
+     /* Main, Article */
 
-    main{
+     main{
         width: 100%;
-        margin-top: 3%;   
+        background-color: #F2F2F2;
+        position:relative;
+        z-index: 0;
+        border-radius: 0px 0px 0px 0px;
+        padding-top: 0px;
+        margin: 0%;
     }
     article{
-        width: auto;
+        width: 100%;
         height: auto;
         padding-left: 0%;
         padding-right: 0%;
         display: flex;
-        flex-direction: column;   
+        flex-direction: column; 
     }
     .titre{
         width: 100%;
@@ -759,6 +730,7 @@
         padding-top: 2%;
         padding-right: 5%;
     }  
+   
 
     /*Menus*/
 
@@ -856,16 +828,14 @@
     footer{
     width: 100%;
     height: auto;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin: 0;
     padding-top: 3%;
     padding-bottom: 3%;
     display: flex;
     flex-direction: column;
     }
     .footerlogo{
+    width: 100%;
     margin-left: 3%;
     padding-top: 0;
     padding-bottom: 0;

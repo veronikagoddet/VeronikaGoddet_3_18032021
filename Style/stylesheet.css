@@ -367,7 +367,7 @@ div.ensemble{
     height: 100%;
 }
 .btn-heart:active .gradient {
-    color: black;
+    color: rgba(0, 0, 0, 0.74);
     z-index: -1;
 }
 .btn-heart:active .nograd {
@@ -382,7 +382,7 @@ div.ensemble{
 }
 .btn-heart .gradient {
     background-color: transparent;
-    color:black;
+    color:rgba(0, 0, 0, 0.75);
 }
 .btn-heart .nograd {
     z-index: -1;
@@ -768,7 +768,7 @@ footer{
         padding-top: 3%;
     }
     form{
-        width: 100%;
+        width: auto;
         padding-top: 1%;
         padding-bottom: 1%;
         display: flex;
