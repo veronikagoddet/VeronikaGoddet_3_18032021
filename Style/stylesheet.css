@@ -123,8 +123,9 @@ header{
     
 }
 .logo{
+    width: 100%;
     margin-top: 0%;
-    margin-bottom: 0;
+    margin-bottom: 1%;
     text-align: center;
     background-color: white;
 }
@@ -158,10 +159,10 @@ form i{
 input.search{
     border: transparent;
     background-color: #e1e3e7;
-    font-size: 1em;
+    font-size: 1rem;
     color: black;
     font-weight: bolder;
-    margin-left: 3%;
+    margin-left: 4%;
 }
 h1{
     width: 300px;
@@ -317,6 +318,29 @@ a{
     text-decoration: none;
     color: black;
 }
+.nouveau{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: rgb(160, 228, 224);
+    width: 75px;
+    height: 27px;  
+    margin-left: 65%;
+    margin-top: 3%;
+    position: absolute;
+    z-index: 1;   
+}
+.nouveau p{
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: rgb(38, 122, 76);
+    margin-top: 8%;
+    margin-bottom: auto;
+    text-align: center;
+}
+img.nouveau{
+    display: contents;
+    justify-content: flex-end;   
+}
 img{
     width: 100%; 
     height: 70%;
@@ -411,30 +435,6 @@ div.ensemble{
     justify-content: center;
 }
 
-.nouveau{
-    border: 1px solid transparent;
-    border-radius: 3px;
-    background-color: rgb(160, 228, 224);
-    width: 75px;
-    height: 27px;  
-    margin-left: 65%;
-    margin-top: 3%;
-    position: absolute;
-    z-index: 1;   
-}
-.nouveau p{
-    font-size: 0.8em;
-    font-weight: bolder;
-    color: rgb(38, 122, 76);
-    margin-top: 8%;
-    margin-bottom: auto;
-    text-align: center;
-}
-img.nouveau{
-    display: contents;
-    justify-content: flex-end;   
-}
-
 /*Footer*/
 
 footer{
@@ -448,17 +448,18 @@ footer{
     flex-direction: column;
 }
 .footerlogo{
-    margin-left: 7%;
-    padding-top: 10%;
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 8%;
     padding-bottom: 5%;
 }
 .picturelogo{
-    width: 40%;
+    width: 35%;
 }
 .elements{
     display: flex;
     flex-direction: column;
-    margin-left: 3%;
+    margin-left: 0%;
 }
 .element{
     color: white;
@@ -938,13 +939,14 @@ footer{
         flex-direction: column;
     }
     .footerlogo{
+        width: 80%;
         padding-top: 0;
         padding-bottom: 0;
         margin-left: 3%;
     }
     .picturelogo{
         background: #000;
-        width: 10%;
+        width: 15%;
     }
     .elements{
         display: flex;
