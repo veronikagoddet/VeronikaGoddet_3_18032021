@@ -85,6 +85,7 @@
         height: auto;
         display: flex; 
         justify-content: space-between;
+        align-items: center;
     }
     h1{
         font-family: 'Shrikhand';
@@ -95,66 +96,55 @@
         margin-top: 0;
         margin-bottom: 5%;
     }
-    .btn-heart:hover .gradient {
-        content: "f004";
-        font-weight: bold;
-        transition: color 1s ease-out;
-        z-index: -1;
-    }
-    .btn-heart:hover .nograd {
-        content: "";
-        z-index: 1;
-        background: -webkit-linear-gradient(#9356DC, #FF79DA);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-transition: height 0.9s linear;
-        -moz-transition: height 0.9s linear;
-        transition: height 0.9s linear;
-        height: 100%;
-    }
-    .btn-heart:active .gradient {
-        color: rgba(0, 0, 0, 0.74);
-        z-index: -1;
-    }
-    .btn-heart:active .nograd {
-        z-index: 1;
-        background: -webkit-linear-gradient(#9356DC, #FF79DA);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-transition: height 0.9s linear;
-        -moz-transition: height 0.9s linear;
-        transition: height 0.9s linear;
-        height: 100%;
-    }
-    .btn-heart .gradient {
-        background-color: transparent;
-        color: rgba(0, 0, 0, 0.75);
-    }
-    .btn-heart .nograd {
-        z-index: -1;
-        width: 100%;
-        height: 0;
-    }
     .btn-heart {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 0%;
-        padding-bottom: 7%;
-        padding-right: 10%;
         width: 50px;
-        height: 50px;
-        font-size: 1.5em;
+        height: 25px;
+        font-size: 1.5rem;
+        border: transparent;
+        background-color: transparent;
         position: relative;
-        border: white;
-        background-color: #F2F2F2;
-        color: #fff;  
+        margin-right: 5%;
+        margin-bottom: 5%;
     }
     .btn-heart .gradient, .btn-heart .nograd {
         position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .btn-heart .gradient {
+        background-color: transparent;
+        color: black;
+    }
+    .btn-heart .nograd {  
+        z-index: -1;
+        width: 100%;
+        height: 0;
+    }
+    .btn-heart:hover .gradient {
+        color: transparent;
+        z-index: -1;
+      }
+    .btn-heart:hover .nograd {
+        z-index: 1;
+        color: #9356DC;
+        background-clip: content-box;
+        transition: height 0.9s linear;
+        height: 100%;
+    }
+    .btn-heart:active .gradient {
+        color: transparent;
+        z-index: -1;
+    }
+    .btn-heart:active .nograd {
+        z-index: 1;
+        color:  #FF79DA;
+        background-clip: content-box;
+        transition: height 0.9s linear;
+        height: 100%;
     }
     
     /*Menus*/
@@ -370,7 +360,7 @@
     }
     .fas.fa-check{
         color: #8ee2ff;
-        border: 1px solid white;
+        border: 1px solid rgba(255, 255, 255, 0.952);
         background-color: white;
         border-radius: 50%;
         width: 25%;
@@ -383,15 +373,11 @@
     }
    
     .tiles:hover .check{
-        -webkit-transition: width 0.3s linear;
-        -moz-transition: width 0.3s linear;
         transition: width 0.3s linear;
         width: 25%;
         cursor: pointer;
     }
     .tiles:not(:hover) .check{
-        -webkit-transition: width 0.3s linear;
-        -moz-transition: width 0.3s linear;
         transition: width 0.3s linear;
         width: 0%;
     }  
@@ -399,17 +385,12 @@
         transition: transform 0.3s linear;
         transform: rotate(360deg);
     }
-   
     .tiles:active .check{
-        -webkit-transition: width 0.3s linear;
-        -moz-transition: width 0.3s linear;
         transition: width 0.3s linear;
         width: 25%;
         cursor: pointer;
     }
     .tiles:not(:active) .check{
-        -webkit-transition: width 0.3s linear;
-        -moz-transition: width 0.3s linear;
         transition: width 0.3s linear;
         width: 0%;
     } 
@@ -508,9 +489,10 @@
         .titre{
             width: auto;
             height: 40px;
+            padding-top: 2%;
         }
         .btn-heart {
-            padding-top: 1%;
+            margin-top: 0%;
         }
         .mets  .mets1 .mets2{
             padding-bottom: 3%;
@@ -599,7 +581,7 @@
             margin-bottom: 0;
         }
         .btn-heart {
-            padding-top: 2%;
+            margin-top: 5%;
         }
         .mets{
             padding-bottom: 3%;
@@ -721,8 +703,8 @@
         justify-content: center;
     }
     .btn-heart {
-        padding-top: 2%;
-        padding-right: 5%;
+        margin-right: 5%;
+        margin-bottom: 0%;
     }  
    
 
