@@ -135,7 +135,7 @@ header{
 .logo{
     width: 100%;
     margin-top: 0%;
-    margin-bottom: 1%;
+    margin-bottom: 0%;
     text-align: center;
     background-color: white;
 }
@@ -147,7 +147,7 @@ header{
     margin-top: 3%;
 }
 
-form{
+.recherche{
     width: 100%;
     border-top: 2px solid rgb(216, 214, 214);
     border-radius: inherit;
@@ -161,7 +161,7 @@ form{
     display: flex;
     justify-content: center;
 }
-form i{
+.recherche i{
     font-size: 1em;
     margin-left: 20%;
     margin-top: 0.5%;
@@ -298,7 +298,7 @@ i.fas.fa-store{
     flex-direction: column;
 }
 h3{
-    padding-top: 5%;
+    padding-top: 10%;
     margin-left: 3%;
     font-size: 1.5em;
     font-weight: bolder;   
@@ -313,9 +313,6 @@ h3{
     display: flex;
     flex-direction: column;
 }
-div a{
-    text-decoration: none;
-}
 .resto{
     width: 100%;
     height: 250px;
@@ -328,6 +325,8 @@ div a{
     margin-right: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .nouveau{
     border: 1px solid transparent;
@@ -335,10 +334,12 @@ div a{
     background-color: rgb(160, 228, 224);
     width: 75px;
     height: 27px;  
-    margin-left: 70%;
-    margin-top: 3%;
+    margin-left: %;
+    margin-top: %;
     position: absolute;
-    z-index: 1;   
+    z-index: 1;
+    right: 6%;
+    margin-top: 5%;
 }
 .nouveau p{
     font-size: 0.8em;
@@ -348,9 +349,8 @@ div a{
     margin-bottom: auto;
     text-align: center;
 }
-img.nouveau{
-    display: contents;
-    justify-content: flex-end;   
+form.nouveau{
+    display: block;  
 }
 img{
     width: 100%; 
@@ -358,14 +358,21 @@ img{
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
 }
+.ensemble{
+    margin-right: 0%;
+    display: flex;
+    justify-content: space-between;
+}
 .text{
     font-size: 1.2em;
     color: black;
     padding-left: 5%;
+    padding-top: 2%;
     padding-bottom: 5%;
     text-align: left;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    text-decoration: none;
 }
 .nom{
     margin-top: 2%;
@@ -379,10 +386,6 @@ img{
     margin-top: 2%;
     margin-bottom: auto;
 }
-.resto.btn-heart{
-    display: flex;
-  
-}
 .btn-heart {
     display: flex;
     justify-content: center;
@@ -392,8 +395,9 @@ img{
     font-size: 1.5rem;
     border: transparent;
     background-color: transparent;
-    position: absolute;
-    right:0;
+    position: relative;
+    padding-right: 12%;
+    padding-top: 5%;
 }
 .btn-heart .gradient, .btn-heart .nograd {
     position: absolute;
@@ -416,8 +420,9 @@ img{
   }
 .btn-heart:hover .nograd {
     z-index: 1;
-    color: #9356DC;
-    background-clip: content-box;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: height 0.9s linear;
     height: 100%;
 }
@@ -427,8 +432,9 @@ img{
 }
 .btn-heart:active .nograd {
     z-index: 1;
-    color:  #FF79DA;
-    background-clip: content-box;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: height 0.9s linear;
     height: 100%;
 }
@@ -498,7 +504,7 @@ footer{
         width: auto;
         height: auto;
     }
-    form i{
+    .recherche i{
         margin-left: 7%;
         margin-top: 0%;
     }
@@ -573,8 +579,7 @@ footer{
         padding-top: 1%;
     }
     .nouveau{
-        margin-top: 2%;
-        margin-left: 2%;
+        margin-top: 3%;
     }
 
     footer{
@@ -607,8 +612,8 @@ footer{
             width: auto;
             height: auto; 
         }
-        form i{
-            margin-left: 8%;
+        .recherche i{
+            margin-left: 7%;
             margin-top: 0%;
         }
         input.search{ 
@@ -720,11 +725,6 @@ footer{
             height: 250px;
             margin-bottom: 3%;    
         }  
-        .nouveau{
-            margin-top: 2%;
-            margin-left: 33%;
-        }
-      
         footer{
             margin-top: 3%;
             padding-bottom: 1%;
@@ -766,19 +766,22 @@ footer{
         margin-top: 0;
         padding-top: 3%;
     }
-    form{
+    .recherche{
         width: auto;
         padding-top: 1%;
         padding-bottom: 1%;
         display: flex;
         justify-content: center;
     }
-    form i{
+    .recherche i{
         font-size: 1em;
         margin-left: 5%;
         margin-top: 0%;
         display: flex;
         align-items: center;
+    }
+    .search{
+        margin-left: 0%;
     }
     h1{
         font-size: 1.8em;
@@ -914,9 +917,8 @@ footer{
     .resto{
         width: 45%;  
     }
-    .nouveau{
+    .nom1{
         margin-top: 1%;
-        margin-left: 33%; 
     }
 
     /*Footer*/
@@ -935,7 +937,7 @@ footer{
         width: 80%;
         padding-top: 0;
         padding-bottom: 0;
-        margin-left: 3%;
+        margin-left: 5%;
     }
     .picturelogo{
         background: #000;
@@ -950,7 +952,7 @@ footer{
         width: 100%;
         color: white;
         font-size: 1em;
-        margin-left: 3%;
+        margin-left: 5%;
         margin-top: 2%;
         margin-bottom: 2%;
     }

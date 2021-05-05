@@ -101,13 +101,13 @@
         justify-content: center;
         align-items: center;
         width: 50px;
-        height: 25px;
+        height: 50px;
         font-size: 1.5rem;
         border: transparent;
         background-color: transparent;
         position: relative;
         margin-right: 5%;
-        margin-bottom: 5%;
+        padding-bottom: 8%;
     }
     .btn-heart .gradient, .btn-heart .nograd {
         position: absolute;
@@ -130,8 +130,9 @@
       }
     .btn-heart:hover .nograd {
         z-index: 1;
-        color: #9356DC;
-        background-clip: content-box;
+        background: -webkit-linear-gradient(#9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         transition: height 0.9s linear;
         height: 100%;
     }
@@ -141,8 +142,9 @@
     }
     .btn-heart:active .nograd {
         z-index: 1;
-        color:  #FF79DA;
-        background-clip: content-box;
+        background: -webkit-linear-gradient(#9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         transition: height 0.9s linear;
         height: 100%;
     }
@@ -489,7 +491,7 @@
         .titre{
             width: auto;
             height: 40px;
-            padding-top: 2%;
+            padding-top: 3%;
         }
         .btn-heart {
             margin-top: 0%;
@@ -581,7 +583,7 @@
             margin-bottom: 0;
         }
         .btn-heart {
-            margin-top: 5%;
+            padding-top: 10%;
         }
         .mets{
             padding-bottom: 3%;
@@ -704,7 +706,7 @@
     }
     .btn-heart {
         margin-right: 5%;
-        margin-bottom: 0%;
+        padding-bottom: 0%;
     }  
    
 
