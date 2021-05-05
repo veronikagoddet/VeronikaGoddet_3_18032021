@@ -313,16 +313,17 @@ h3{
     display: flex;
     flex-direction: column;
 }
-.resto{
+
+figure{
     width: 100%;
     height: 250px;
     border: 1px solid #fff;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 5px 0.3em #e2e2e2; 
-    margin-bottom: 3%; 
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 3%;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -334,8 +335,8 @@ h3{
     background-color: rgb(160, 228, 224);
     width: 75px;
     height: 27px;  
-    margin-left: %;
-    margin-top: %;
+    margin-left: 0%;
+    margin-top: 0%;
     position: absolute;
     z-index: 1;
     right: 6%;
@@ -354,28 +355,24 @@ form.nouveau{
 }
 img{
     width: 100%; 
-    height: 70%;
+    height: 170px;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
 }
-.ensemble{
-    margin-right: 0%;
-    display: flex;
-    justify-content: space-between;
-}
+
 .text{
     font-size: 1.2em;
     color: black;
     padding-left: 5%;
-    padding-top: 2%;
-    padding-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
     text-align: left;
     display: flex;
     flex-direction: column;  
     text-decoration: none;
 }
 .nom{
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 0;
     font-size: 1.2rem;
     font-weight: bolder;
@@ -395,9 +392,10 @@ img{
     font-size: 1.5rem;
     border: transparent;
     background-color: transparent;
-    position: relative;
-    padding-right: 12%;
-    padding-top: 5%;
+    position: absolute;
+    right: 0;
+    padding-right: 10%;
+    padding-top: 3%;
 }
 .btn-heart .gradient, .btn-heart .nograd {
     position: absolute;
@@ -581,7 +579,13 @@ footer{
     .nouveau{
         margin-top: 3%;
     }
-
+    .text{
+        padding-top: 0;
+    }
+    .btn-heart{
+        padding-top: 0;
+        padding-right: 8%;
+    }
     footer{
         padding-bottom: 5%;
     }
@@ -720,11 +724,11 @@ footer{
             flex-wrap: wrap;
             justify-content: space-evenly;    
         }
-        .resto{
+        figure{
             width: 45%;
             height: 250px;
             margin-bottom: 3%;    
-        }  
+        }
         footer{
             margin-top: 3%;
             padding-bottom: 1%;
@@ -755,7 +759,6 @@ footer{
         margin: 0; 
         padding-bottom: 3%;
     }
-   
     .logo{
         margin-top: 0%;
         margin-bottom: 0%;  
@@ -780,8 +783,8 @@ footer{
         display: flex;
         align-items: center;
     }
-    .search{
-        margin-left: 0%;
+    input.search{
+        margin-left: 2%;
     }
     h1{
         font-size: 1.8em;
@@ -895,7 +898,6 @@ footer{
         margin-right: auto;
         border-radius: 15px;
         display: flex;
-        flex-direction: column;
     }
     h3{
         padding-top: 3%;
@@ -914,11 +916,18 @@ footer{
         flex-wrap: wrap;
         justify-content: space-evenly;    
     }
-    .resto{
+    figure{
         width: 45%;  
+    }
+    .nouveau{
+        margin-top: 3%;
     }
     .nom1{
         margin-top: 1%;
+    }
+    .btn-heart{
+        padding-top: 0;
+        padding-right: 8%;
     }
 
     /*Footer*/
