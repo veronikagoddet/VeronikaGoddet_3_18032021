@@ -146,9 +146,8 @@ header{
     background-color: white;
     margin-top: 3%;
 }
-
 .recherche{
-    width: 100%;
+    width: auto;
     border-top: 2px solid rgb(216, 214, 214);
     border-radius: inherit;
     border-bottom: 2px solid transparent;
@@ -238,7 +237,7 @@ h2{
 .function1{
     width: 70%;
     border: 1px solid #f2f2f3;
-    background-color: #f2f3f2F2;
+    background-color: #f2f2f1;
     border-radius: 25px;
     box-shadow: 0 2px 0px 0.1em #e3e2e2; 
     padding: 8%;
