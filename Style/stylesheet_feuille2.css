@@ -300,15 +300,12 @@
         flex-direction: column;
         cursor: pointer;
     }
-    .card p{
-        margin: 0;
-    }
+
     .tiles{
         display: flex;
         flex-direction: row;
         width: 100%;
         height: 100%;
-    
     }
     .repas{
         display: flex;
@@ -350,9 +347,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        margin: 0;
     }
     .price{
         width: 15%;
@@ -360,7 +355,7 @@
         font-weight: bolder;
         display: flex;
         flex-direction: row;
-        margin-right: 0%;
+        margin: 0%;
     }   
     .check{
         height: 102%;
@@ -371,6 +366,7 @@
         color:#fff;
         background-color:  rgb(160, 228, 224);;
         overflow: hidden;
+        margin: 0;
     }
     .fas.fa-check{
         color: #8ee2ff;
@@ -721,30 +717,30 @@
         padding-bottom: 0%;
     }  
    
-
     /*Menus*/
 
     .menu{
         display: flex;
         flex-direction: row;
-        width:auto;
+        width: 96%;
         height: auto;
+        margin-top: 3%;
         margin-left: 3%;
-        margin-right: 3%;
+        margin-right: 0;
     }
     .mets, .mets1, .mets2{
-        width: 35%;
-        padding-bottom: 1%; 
+        width: 33%;
+        padding-bottom: 0%; 
     }
     h2{
         font-size: 1em;
         font-weight: inherit;
-        margin-left: 0%;
+        margin-left: 3%;
         margin-bottom: 1%;
     }
     .trait_dessous{
         width: 40px;
-        margin-left: 0%;
+        margin-left: 3%;
         margin-bottom: 0%;
     }
     hr{
@@ -758,17 +754,21 @@
         box-shadow: 0px 5px 5px #e0e3e6;
         width: 94%;
         height: 70px;
-        margin-left: 0%;
-        margin-right: 0%;
         margin-bottom: 3%;
         display: flex;
         flex-direction: column;    
     }
+
+    .repas{
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
     .first{
         font-weight: bold;
-        margin-top: 3%;
-        margin-bottom: 0%;
-        margin-left: 0%;
+        margin: 0;
         padding-top: 0%;
         padding-bottom: 0%;    
     }
@@ -777,24 +777,30 @@
        padding-top: 0%;
     }
     .second{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         position: relative;
         z-index:1;
-        
+        margin-top: 0%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .price{
         display: flex;
-        margin-right: 5%;
+        margin: 0;
+    }
+    .check{
+        margin:0;
     }
     .tiles:hover .check{
-        width: 90px;
+        width: 80px;
     }
     .tiles:active .check{
-        width: 90px;
+        width: 80px;
     }
 
     /*Bouton*/
